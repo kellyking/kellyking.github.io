@@ -26,7 +26,7 @@ html, body {
 }
 
 p {
-       text-align: center;
+    text-align: center;
     font-size: 1.5rem;
     color: black;
   
@@ -46,13 +46,7 @@ main {
 }
 
 
-@media (min-width: 766px) {
-    main {
-   // background: url(../img/sleeping-cat.jpg) no-repeat;
-   // background-size: cover;
-   // opacity: 0.8;
-    }
-}
+
 
 @media (min-width: 1023px) {
     main {

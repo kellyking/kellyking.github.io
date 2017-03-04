@@ -40,7 +40,7 @@ main {
   padding: 2rem; }
 
 @media (min-width: 1023px) {
-  /* line 58, sass/styles.scss */
+  /* line 52, sass/styles.scss */
   main {
     background: url(../img/sleeping-cat.jpg) no-repeat;
     background-size: cover;
