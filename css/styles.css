@@ -1,0 +1,47 @@
+/* line 5, sass/styles.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* line 11, sass/styles.scss */
+html {
+  font-size: 16px; }
+
+/* line 16, sass/styles.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: ghostwhite; }
+
+/* line 24, sass/styles.scss */
+html, body {
+  height: 100%; }
+
+/* line 28, sass/styles.scss */
+p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black; }
+
+/* line 35, sass/styles.scss */
+main {
+  position: relative;
+  height: 100%;
+  background: url(../img/sleeping-cat.jpg) no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  opacity: 0.8; }
+
+/* line 44, sass/styles.scss */
+.content {
+  padding: 2rem; }
+
+@media (min-width: 1023px) {
+  /* line 58, sass/styles.scss */
+  main {
+    background: url(../img/sleeping-cat.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.8; } }
