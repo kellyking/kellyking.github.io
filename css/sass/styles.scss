@@ -19,37 +19,94 @@ html {
      font-size: 1rem;
      line-height: 1.5rem;
      background-color: ghostwhite;
+     color: black;
  }
 
 html, body {
     height: 100%;
 }
 
-p {
+h1 {
     text-align: center;
-    font-size: 1.5rem;
-    color: black;
-  
+    font-size: 1.5rem;  
 }
 
-main {
+#alpha {
     position: relative;
-    height: 100%;
+    height: 100vh;
     background: url(../img/sleeping-cat.jpg) no-repeat;
     background-size: auto 100%;
     background-position: center center;
-    opacity: 0.8;
 }
 
 .content {
         padding: 2rem;
+}
+nav#primary {
+    ul {
+        list-style-type: none;
+        li {
+        text-align: right;
+            a {
+                color: black;
+                text-decoration: underline;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+nav#secondary {
+    ul {
+        list-style-type: none;
+        padding-bottom: 4rem;
+        display: block;
+        margin: 0 auto;
+        width: 350px;
+        li {
+            display: inline-block;
+            float: left;
+            a {
+                color: black;
+                text-decoration: underline;
+                padding: 0.5rem 2rem 0.5rem 0;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+#portfolio {
+    padding: 2rem 4rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 2.75rem;
+    padding-bottom: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+    padding: 1rem 0 1.25rem 0;
+}
+p, ul {
+    padding-bottom: 0.5rem;
+}
+.project {
+    padding-bottom: 4rem;
+    ul {
+        padding-left:3rem;
+    }
 }
 
 
 
 
 @media (min-width: 1023px) {
-    main {
+    #alpha {
     background: url(../img/sleeping-cat.jpg) no-repeat;
     background-size: cover;
     opacity: 0.8;

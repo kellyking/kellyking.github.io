@@ -1,37 +1,86 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Kelly King - Front End Web Developer">
-  <meta name="author" content="Kelly King">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly King - UX Engineer</title>
+    <meta name="author" content="Kelly King">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
-
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-
-    
-
 </head>
-
 <body>
+
 <main>
-
     <section id="alpha">
-        
+        <nav id="primary">
+            <ul>
+                <li><a href="#portfolio">portfolio</a></li>
+            </ul>
+        </nav>
         <div class="content">
-            <p>still working on it.</p>
-            
-
+            <h1>still working on it.</h1>
         </div>
-       
     </section>
-
-  
+    <section id="portfolio">
+        <nav id="secondary">
+            <ul>
+                <li><a href="#navigation">navigation</a></li>
+                <li><a href="#pwa">pwa</a></li>
+                <li><a href="#podcast">podcast & blog site</a></li>
+            </ul>
+        </nav>
+        <div class="project" id="navigation">
+            <h2>soundstrue.com navigation</h2>
+            <h3>summary</h3>
+            <p>tbd</p>
+            <h3>problem</h3>
+            <img src="img/sleeping-cat.jpg" alt="heatmap of the main navigation showing zero clicks" width="400px">
+            <p>No one was using the main navigation on the website and was using search as their primary means of locating products and information.</p>
+            <p>A navigation should help users quickly find the product they are looking for by immediately narrowing the catalog. By defaulting to search, users were presented with a large search result list that they then had to filter themselves. In addition to the main navigation problem, the filters were not being used on the search results page, but that is another story.</p>
+            <h3>hypothesis</h3>
+            <p>Working with the design manager and product manager, we hypothesized that the reason why no one was using the manin navigation was because the link text was too specific, confusing, and there were too many choices to choose from (11 links).</p><p>We decided we would come up with new navigation links that would help users quickly find what they were looking for. </p>
+            <h3>data to the rescue</h3>
+            <img src="img/sleeping-cat.jpg" alt="pie chart showing the distribution of user search keywords" width="400px">
+            <p>We use a third-party service, Nextopia, to power our search on the website. I downloaded at the search terms from the beginning of 2019, and categorized the top 500 terms. I labeled each one: author, topic, product title, the word 'free', podcast, blog, anything relating to customer service, digital library, etc.</p>
+            <p>The results showed that the majority (44.8%) of users are searching for a specific author name. The next highest was topic (), followed by product title (). The rest of the search terms were below 3% each. </p>
+            <h3>proposed solution</h3>
+            <p>Working with the design manager and product manager, we took this data and created new navigation links. We ended up created two versions of the navigation, since there was internal disagreement about some links.</p>
+            <p>These are wireframes of the two versions of the navigation:</p>
+            <img src="img/sleeping-cat.jpg" alt="version a" width="400px">
+            <img src="img/sleeping-cat.jpg" alt="version a" width="400px">
+            <h3>research</h3>
+            <p>I completed in-person prototype testing  of the two navigations. My findings were:</p>
+            <ul>
+                <li>Participants were confused by the term 'Event' and described products completely dissimilar to our event products.</li>
+                <li>Including the term 'Topics' made it easier for some participants to complete their tasks.</li>
+                <li>The term 'Topics' helped the participants learn about the company.</li>
+                <li>Participants immediately knew we published books because of the term 'Authors'.</li>
+                <li>Including the terms 'Podcast' and 'Blog' made it easier for participants to complete thier tasks that were related to these.</li>
+            </ul>
+            <p>After reviewing the tests, I created a new version of the navigation. I also communicated the findings regarding the term 'Events' to the Events team.</p>
+            <p> The Events team discussed the problem with the term 'Events' and proposed a new term: 'Trainings & Retreats'. I was initally unsure of this term. Firstly, I felt it was too long for an itme in the main navigation. Secondly, I wasn't sure that users would understand the term.</p>
+            <p>I created a new version of the navigation and did another round of paper prototype tests.</p>
+            <img src="img/sleeping-cat.jpg" alt="version a" width="400px">
+            <p>My findings were:</p>
+            <ul>
+                <li>Participants did understand the term 'Trainings & Retreats'. They described products that were similar to our training and retreat products.</li>
+            </ul>
+            <h3>solution</h3>
+            <p>These are wireframes of the final navigation:</p>
+            <img src="img/sleeping-cat.jpg" alt="version a" width="400px">
+            <p>I removed the word 'Retreats' from the term 'Trainings & Retreats' for two reasons. First, it made the term too long. Second, we only produce a few retreats a year and including it in the main navigation seemed insincere.</p>
+            <h3>results</h3>
+            <p>We are currently in the process of implementing this new navigation. Stay tuned!</p>
+        </div>
+        <div class="project" id="pwa">
+            <h2>digital library pwa</h2>
+        </div>
+        <div class="project" id="podcast">
+            <h2>podcast & blog website</h2>
+        </div>
+    </section>
 <!-- photo credit unsplash.com/@ejleusink -->
 </main>
 </body>
-
-
 </html>
