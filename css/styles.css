@@ -17,92 +17,91 @@ body {
   background-color: ghostwhite;
   color: black; }
 
-/* line 25, sass/styles.scss */
+/* line 24, sass/styles.scss */
 html, body {
   height: 100%; }
 
-/* line 29, sass/styles.scss */
+/* line 27, sass/styles.scss */
+main {
+  position: relative; }
+
+/* line 30, sass/styles.scss */
 h1 {
   text-align: center;
   font-size: 1.5rem; }
 
-/* line 34, sass/styles.scss */
+/* line 35, sass/styles.scss */
 #alpha {
   position: relative;
   height: 100vh;
   background: url(../img/sleeping-cat.jpg) no-repeat;
   background-size: auto 100%;
-  background-position: center center; }
+  background-position: center center;
+  opacity: 0.8; }
 
-/* line 42, sass/styles.scss */
+/* line 44, sass/styles.scss */
 .content {
   padding: 2rem; }
 
-/* line 46, sass/styles.scss */
-nav#primary ul {
-  list-style-type: none; }
-  /* line 48, sass/styles.scss */
-  nav#primary ul li {
-    text-align: right; }
-    /* line 50, sass/styles.scss */
-    nav#primary ul li a {
-      color: black;
-      text-decoration: underline; }
-      /* line 53, sass/styles.scss */
-      nav#primary ul li a:hover {
-        cursor: pointer; }
+/* line 47, sass/styles.scss */
+nav#primary {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: ghostwhite;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); }
+  /* line 53, sass/styles.scss */
+  nav#primary ul {
+    list-style-type: none;
+    padding: 1rem 0 3rem 0;
+    display: block;
+    margin: 0 auto;
+    width: 350px; }
+    /* line 59, sass/styles.scss */
+    nav#primary ul li {
+      display: inline-block;
+      float: left; }
+      /* line 62, sass/styles.scss */
+      nav#primary ul li a {
+        color: black;
+        text-decoration: underline;
+        padding: 0.5rem 2rem 0.5rem 0; }
+        /* line 66, sass/styles.scss */
+        nav#primary ul li a:hover {
+          cursor: pointer; }
 
-/* line 61, sass/styles.scss */
-nav#secondary ul {
-  list-style-type: none;
-  padding-bottom: 4rem;
-  display: block;
-  margin: 0 auto;
-  width: 350px; }
-  /* line 67, sass/styles.scss */
-  nav#secondary ul li {
-    display: inline-block;
-    float: left; }
-    /* line 70, sass/styles.scss */
-    nav#secondary ul li a {
-      color: black;
-      text-decoration: underline;
-      padding: 0.5rem 2rem 0.5rem 0; }
-      /* line 74, sass/styles.scss */
-      nav#secondary ul li a:hover {
-        cursor: pointer; }
-
-/* line 81, sass/styles.scss */
+/* line 74, sass/styles.scss */
 #portfolio {
-  padding: 2rem 4rem;
+  padding: 0 4rem 2rem 4rem;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; }
 
-/* line 87, sass/styles.scss */
+/* line 81, sass/styles.scss */
 h2 {
   font-size: 2.75rem;
   padding-bottom: 2rem; }
 
-/* line 91, sass/styles.scss */
+/* line 85, sass/styles.scss */
 h3 {
   font-size: 1.75rem;
   padding: 1rem 0 1.25rem 0; }
 
-/* line 95, sass/styles.scss */
+/* line 89, sass/styles.scss */
 p, ul {
   padding-bottom: 0.5rem; }
 
-/* line 98, sass/styles.scss */
+/* line 92, sass/styles.scss */
 .project {
-  padding-bottom: 4rem; }
-  /* line 100, sass/styles.scss */
+  padding: 2rem 0; }
+  /* line 94, sass/styles.scss */
   .project ul {
     padding-left: 3rem; }
 
-@media (min-width: 1023px) {
-  /* line 109, sass/styles.scss */
-  #alpha {
-    background: url(../img/sleeping-cat.jpg) no-repeat;
-    background-size: cover;
-    opacity: 0.8; } }
+/* line 98, sass/styles.scss */
+#navigation {
+  padding-top: 6rem; }
+
+/* line 101, sass/styles.scss */
+a.jump {
+  margin-top: 50px; }

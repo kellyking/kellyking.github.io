@@ -21,11 +21,12 @@ html {
      background-color: ghostwhite;
      color: black;
  }
-
 html, body {
     height: 100%;
 }
-
+main {
+    position: relative;
+}
 h1 {
     text-align: center;
     font-size: 1.5rem;  
@@ -37,30 +38,21 @@ h1 {
     background: url(../img/sleeping-cat.jpg) no-repeat;
     background-size: auto 100%;
     background-position: center center;
+    opacity: 0.8;
 }
 
 .content {
         padding: 2rem;
 }
 nav#primary {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: ghostwhite;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
     ul {
         list-style-type: none;
-        li {
-        text-align: right;
-            a {
-                color: black;
-                text-decoration: underline;
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-}
-nav#secondary {
-    ul {
-        list-style-type: none;
-        padding-bottom: 4rem;
+        padding: 1rem 0 3rem 0;
         display: block;
         margin: 0 auto;
         width: 350px;
@@ -78,11 +70,13 @@ nav#secondary {
         }
     }
 }
+
 #portfolio {
-    padding: 2rem 4rem;
+    padding: 0 4rem 2rem 4rem;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+
 }
 h2 {
     font-size: 2.75rem;
@@ -96,19 +90,17 @@ p, ul {
     padding-bottom: 0.5rem;
 }
 .project {
-    padding-bottom: 4rem;
+    padding: 2rem 0;
     ul {
         padding-left:3rem;
     }
 }
-
-
-
-
-@media (min-width: 1023px) {
-    #alpha {
-    background: url(../img/sleeping-cat.jpg) no-repeat;
-    background-size: cover;
-    opacity: 0.8;
-    }
+#navigation {
+    padding-top: 6rem;
+}
+a.jump {
+    margin-top: 50px;
+}
+img {
+    
 }
