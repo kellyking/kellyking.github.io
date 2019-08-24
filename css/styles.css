@@ -105,3 +105,11 @@ p, ul {
 /* line 101, sass/styles.scss */
 a.jump {
   margin-top: 50px; }
+
+/* line 104, sass/styles.scss */
+img {
+  max-width: 1072px; }
+
+/* line 107, sass/styles.scss */
+.second img {
+  max-width: 250px; }
