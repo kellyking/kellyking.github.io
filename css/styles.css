@@ -1,14 +1,14 @@
-/* line 5, sass/styles.scss */
+/* line 2, sass/styles.scss */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-/* line 11, sass/styles.scss */
+/* line 8, sass/styles.scss */
 html {
   font-size: 16px; }
 
-/* line 16, sass/styles.scss */
+/* line 13, sass/styles.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -17,21 +17,21 @@ body {
   background-color: ghostwhite;
   color: black; }
 
-/* line 24, sass/styles.scss */
+/* line 21, sass/styles.scss */
 html, body {
   height: 100%; }
 
-/* line 27, sass/styles.scss */
+/* line 24, sass/styles.scss */
 main {
   position: relative; }
 
-/* line 30, sass/styles.scss */
+/* line 27, sass/styles.scss */
 h1 {
   text-align: center;
   font-size: 1.5rem;
   line-height: 1.5; }
 
-/* line 36, sass/styles.scss */
+/* line 33, sass/styles.scss */
 #alpha {
   position: relative;
   height: 100vh;
@@ -40,87 +40,98 @@ h1 {
   background-position: center center;
   opacity: 0.8; }
 
-/* line 45, sass/styles.scss */
+/* line 42, sass/styles.scss */
 .content {
   padding: 2rem; }
 
-/* line 48, sass/styles.scss */
+/* line 45, sass/styles.scss */
 nav#primary {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: ghostwhite;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); }
-  /* line 54, sass/styles.scss */
+  /* line 51, sass/styles.scss */
   nav#primary ul {
     list-style-type: none;
-    padding: 1rem 0 3rem 0;
+    padding: 0;
     display: block;
     margin: 0 auto;
     width: 350px; }
-    /* line 60, sass/styles.scss */
+    /* line 57, sass/styles.scss */
     nav#primary ul li {
       display: inline-block;
       float: left; }
-      /* line 63, sass/styles.scss */
+      /* line 60, sass/styles.scss */
       nav#primary ul li a {
         color: black;
         text-decoration: underline;
-        padding: 0.5rem 2rem 0.5rem 0; }
-        /* line 67, sass/styles.scss */
+        padding: 2rem 1rem 2rem 1rem;
+        display: inline-block; }
+        /* line 65, sass/styles.scss */
         nav#primary ul li a:hover {
           cursor: pointer; }
+    /* line 70, sass/styles.scss */
+    nav#primary ul:after {
+      clear: both;
+      content: "";
+      display: table; }
 
-/* line 75, sass/styles.scss */
+/* line 78, sass/styles.scss */
 #portfolio {
   padding: 0 4rem 2rem 4rem;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; }
 
-/* line 82, sass/styles.scss */
+/* line 85, sass/styles.scss */
 h2 {
   font-size: 2.75rem;
   padding-bottom: 2rem;
   line-height: 1.5; }
 
-/* line 87, sass/styles.scss */
+/* line 90, sass/styles.scss */
 h3 {
   font-size: 1.75rem;
   padding: 1rem 0 1.25rem 0;
   line-height: 1.5; }
 
-/* line 92, sass/styles.scss */
+/* line 95, sass/styles.scss */
 p, ul {
   padding-bottom: 0.5rem; }
 
-/* line 95, sass/styles.scss */
+/* line 98, sass/styles.scss */
 .project {
   padding: 2rem 0; }
-  /* line 97, sass/styles.scss */
+  /* line 100, sass/styles.scss */
   .project ul {
     padding-left: 3rem; }
-  /* line 100, sass/styles.scss */
+  /* line 103, sass/styles.scss */
   .project img {
     max-width: 1072px;
     width: 100%; }
 
-/* line 105, sass/styles.scss */
+/* line 108, sass/styles.scss */
 #navigation {
   padding-top: 6rem; }
 
-/* line 108, sass/styles.scss */
+/* line 111, sass/styles.scss */
 a.jump {
   margin-top: 50px; }
 
-/* line 111, sass/styles.scss */
+/* line 114, sass/styles.scss */
 img {
   max-width: 1072px; }
 
-/* line 114, sass/styles.scss */
-.second img {
-  max-width: 250px; }
-
 /* line 117, sass/styles.scss */
+.second img {
+  max-width: 350px; }
+
+/* line 120, sass/styles.scss */
 .third img {
   max-width: 614px; }
+
+@media only screen and (max-width: 768px) {
+  /* line 125, sass/styles.scss */
+  #portfolio {
+    padding: 0 2rem 2rem 2rem; } }
