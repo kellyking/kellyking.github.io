@@ -10,16 +10,46 @@
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+    <header>
+        <a href="#main-menu"
+           id="main-menu-toggle"
+           class="menu-toggle"
+           aria-label="Open main menu">
+          <span class="sr-only">Open main menu</span>
+          <span class="fa fa-bars" aria-hidden="true">menu</span>
+        </a>
+        
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+          <a href="#main-menu-toggle"
+             id="main-menu-close"
+             class="menu-close"
+             aria-label="Close main menu">
+            <span class="sr-only">Close main menu</span>
+            <span class="fa fa-close" aria-hidden="true">close</span>
+          </a>
+          <ul>
+            <li><a href="#navigation">navigation</a></li>
+            <li><a href="#categories">categories</a></li>
+            <li><a href="#pwa">pwa</a></li>
+            <li><a href="#podcast">podcast/blog</a></li>
+            <li><a href="#course">course</a></li>
+        </ul>
+    </nav>
+ <!--    <a href="#main-menu-toggle"
+       class="backdrop"
+       tabindex="-1"
+       aria-hidden="true" hidden></a> -->
+  </header>
 <main>
-    <nav id="primary">
+    <!-- <nav id="primary">
             <ul>
                 <li><a href="#navigation">navigation</a></li>
                 <li><a href="#categories">categories</a></li>
                 <li><a href="#pwa">pwa</a></li>
                 <li><a href="#podcast">podcast/blog</a></li>
+                <li><a href="#course">course</a></li>
             </ul>
-        </nav>
+        </nav> -->
     <section id="portfolio">
         
         <div class="project first" id="navigation">
@@ -105,6 +135,27 @@
             <p>The designs for the site are complete and it is currently in the process of being built.</p>
             <p>There are several metrics that we will use to determine if our project is a success. Since we are incorporating cross-sells in this new site, something we’ve never had before, we are anticipating a certain amount of revenue. We are also incorporating a comment plugin for each blog and podcast post, something we’ve never done before. We do have an expectation that our users will be prolific in their writings, since enabling comments on some of our other products has gone well.</p>
             <p>Another metric that we will track is customer engagement. We are focused on creating a great user experience, and our goal is to have users be frequent visitors to the site.</p>
+        </div>
+        <div class="project fourth" id="course">
+            <h2>online course</h2>
+            <h3>summary</h3>
+            <p>One of our most popular products is a four-year old online course in mindfulness. It’s marketing materials and sales page has never been updated. This project was to review the marketing assets and sales page, make improvements, and hopefully gain an increase in sales.</p>
+            <h3>problem</h3>
+            <p>We use long-form sales pages, in the marketing style of DigitalMarketer. The sales page includes an immense amount of information about the product, including: product description, online course schedule and curriculum, teacher biographies, benefits of taking the course, description of bonus products, endorsements of the teachers by leading experts in the field, and payment options. This is a lot of information for the customer to take in and process in order to make a purchasing decision.</p>
+            <p>In addition to the lengthy sales page, we use dozens of emails, social media advertisements, and affiliates to market our product. This is an immense amount of visual assets. In addition to this, once the customer purchases the product, there is the online course itself.  The eight-week online course contains copy, audio and video files. None of this has been updated in four years.
+            </p>
+            <h3>data to the rescue</h3>
+            <p>I worked with the Project Manager, Design Manager and Copywriter to create a Journey Asset Map of the product. We printed out all visual assets of the product, including: marketing emails, social assets, affiliate assets, the sales page, and the online course itself. We taped these assets to a large wall and mapped out the multiple customers journeys with string.</p>
+            <img src="../img/asset-map.png" alt="journey asset map">
+            <p>We then annotated the map with data regarding each asset and journey segment. Examples were heatmap and clickmap data from the sales page and online course, clicks and resulting sales revenue from each email. We also focused on the branding, specific copy and imagery of the assets. During a customers journey were they presented with a cohesive articulation of the product, or were the different assets visually unconnected? Were each of the different customer’s journeys fluid and understandable, or were they confusing and left the customer at a dead end?
+            </p>
+            <p>I also completed a heuristic evaluation of the sales page. I used the Nielsen Norman Group’s 10 general principles for interaction design, and their UX best-practices in terms of design and layout in my review of the page.
+            </p>
+            <h3>proposed solution</h3>
+            <p>After evaluating all this data, we composed a list of changes we wanted to make to the marketing materials, sales page, and online course. Some of these changes include: tightening up the email copy and focusing on how the course will solve the customer’s problems; including a customer reviews section on the sales page; including transcripts with all audio and video content in the course itself; and maintaining a strong brand presence through the visual assets.</p>
+            <h3>results</h3>
+            <p>We are currently in the process of redesigning the marketing materials and sales page. We are on track to launch the product at the beginning of 2020.</p>
+            <p>There are several metrics that we are planning on using to measure our success. An increase in conversion rate, volume of transactions, and revenue will indicate that our project had been a success. Another method is by measuring the customer experience, through Customer Service calls and through other means such as customer surveys. If our improvements are a success, customer questions about the product should decrease, and overall product satisfaction should increase.</p>
         </div>
     </section>
 </main>
