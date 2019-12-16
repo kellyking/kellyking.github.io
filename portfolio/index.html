@@ -10,152 +10,105 @@
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-        <a href="#main-menu"
-           id="main-menu-toggle"
-           class="menu-toggle"
-           aria-label="Open main menu">
-          <span class="sr-only">Open main menu</span>
-          <span class="fa fa-bars" aria-hidden="true">menu</span>
-        </a>
-        
-        <nav id="main-menu" class="main-menu" aria-label="Main menu">
-          <a href="#main-menu-toggle"
-             id="main-menu-close"
-             class="menu-close"
-             aria-label="Close main menu">
-            <span class="sr-only">Close main menu</span>
-            <span class="fa fa-close" aria-hidden="true">close</span>
-          </a>
-          <ul>
-            <li><a href="#navigation">navigation</a></li>
-            <li><a href="#categories">categories</a></li>
-            <li><a href="#pwa">pwa</a></li>
-            <li><a href="#podcast">podcast/blog</a></li>
-            <li><a href="#course">course</a></li>
-        </ul>
-    </nav>
- <!--    <a href="#main-menu-toggle"
-       class="backdrop"
-       tabindex="-1"
-       aria-hidden="true" hidden></a> -->
-  </header>
 <main>
-    <!-- <nav id="primary">
-            <ul>
-                <li><a href="#navigation">navigation</a></li>
-                <li><a href="#categories">categories</a></li>
-                <li><a href="#pwa">pwa</a></li>
-                <li><a href="#podcast">podcast/blog</a></li>
-                <li><a href="#course">course</a></li>
-            </ul>
-        </nav> -->
-    <section id="portfolio">
-        
+    <section>
+            <div class="project fourth" id="course">
+                <div class="left"><h2>Product Sales Page Redesign</h2></div>
+                <div class="right">
+                    <h3>summary</h3>
+                    <p>Create Journey Asset Map of the marketing assets for a mindfulness online course. Analyze the results and make recommendations for improvement.</p>
+                    <h3>problem</h3>
+                    <p>We actively market this product several times a year, and have done so for the past four years. Sales had platued. The sell page included an immense amount of information and as a result was extremely long and unfocused.
+                    </p>
+                    <h3>data to the rescue</h3>
+                    <p>I worked with the Project Manager, Design Manager and Copywriter to create a Journey Asset Map of the product. We printed out all visual assets for the product, tapped them to a large wall, and mapped out the multiple customer journeys. We then annotated the map with analytics regarding each asset and journey segment. I also completed a heuristic evaluation of the sell page using Nielsen Norman Group’s 10 general principles for interaction design
+                    </p>
+                    <img src="../img/asset-map.png" alt="journey asset map">
+                    <h3>proposed solution</h3>
+                    <p>After evaluating all this data, I focused my attention on the sell page andcomposed a list of improvements to make to the page. Some of the proposed changes included: adding customer reviews and social proof; shortening the overall length of the page; including language that explains how the product will solve customer’s problems above the fold; reducing the number of items in the main navigation; adding 2 CTA’s above the fold; using a persistent navigation that is always visible.
+                    </p>
+                    <h3>results</h3>
+                    <p>The marketing materials and sales page were redesigned and launched. Marketing started November 2019 and will end the beginning of February 2020. There are several metrics that we are tracking to determine our success with the redesign. One metric we are tracking is total number of product sales. With only a third of the way into the marketing window, the redesign has an average of 8.9 sales per day, while the previous version had an average of 6 sales per day. This is a 67% improvement in product sales. For a $297 product this should result in an increase of $75,500 additional sales dollars for this one launch. We tend to market this product several times per year; 5 times in 2019. If we continue this marketing pattern for next year, the redesign should result in an increase of $377,500 for 2020.
+                    </p>
+                </div>
+            </div>
+        </section>
+    <section>
         <div class="project first" id="navigation">
-            <h2>new navigation</h2>
-            <h3>summary</h3>
-            <p>We are currently in the process of moving our ecommerce site from Magento 1 to Shopify. Since the website will be created anew, we decided now would be a good time to make some much needed improvements. One of these improvements is redeveloping the main navigation.</p>
-            <h3>problem</h3>
-            <img src="../img/st-homepage-navigation.png" alt="heatmap of the main navigation showing zero clicks">
-            <p>No one was using the main navigation on the website. Customers were using search as their primary means of locating products and information. Looking at heatmaps of the homepage, out of 10,000 users not one click went to the navigation.</p>
-            <p>A navigation should help users quickly find the product they are looking for by immediately narrowing the catalog. By defaulting to search, users were presented with a large search result list that they then had to filter themselves. In addition to the main navigation problem, the filters were not being used on the search results page, but that is another story.</p>
-            <h3>hypothesis</h3>
-            <p>Working with the design manager and product manager, we hypothesized that the reason why no one was using the main navigation was because the link text was too specific, confusing, and there were too many choices to choose from (11 links). A common complaint from our customers, that we receive from customer service is, “you have so many products, I don’t know where to begin.”</p><p>We decided we would come up with a new navigation that would help users quickly find what they were looking for. </p>
-            <h3>data to the rescue</h3>
-            <p>Using heatmaps of the homepage, we determined that the top two tasks were register/login (20% of clicks), and search (25% of clicks). We use a third-party service, Nextopia, to power our search on the website. I downloaded all the search terms from Nextopia for Q1 of 2019. I then categorized each of the top 500 terms, for example: author, topic, register, customer service, etc. </p>
-            <p>The results showed that the majority (44.8%)  of search terms are for a specific author name. The next highest was topic (32.7%), followed by product title (13.1%). The rest of the search terms categories were below 3% each.</p>
-            <h3>proposed solution</h3>
-            <p>Working with the design manager and product manager, we took all this data and created a new navigation that focused on the search terms our customers used. After two sets of in-person paper prototype tests, discussions with internal product teams, and several rounds of revisions, we finalized the wireframes.</p>
-            <p>Here is the wireframe for the main navigation:</p>
-            <img src="../img/navigation-wireframe.png" alt="navigation wireframes">
-            <p>Wireframe for the Author drop-down:</p>
-            <img src="../img/nav-author.png" alt="navigation authro drop-down">
-            <p>Wireframe for the Topic drop-down:</p>
-            <img src="../img/nav-topic.png" alt="navigation topic drop-down"> 
-            <h3>results</h3>
-            <p>The designs are complete and we are currently in the process of implementing this new navigation.</p>
-            <p>There are several metrics that we are planning on using to measure our success. An increase in conversion rate, average order value, volume of transactions, and revenue will indicate that our project had been a success. It’s understandable that our navigation project will not be the sole reason these metrics will increase; however, if they all increase in a significant amount during the time when the new Shopify site launches, we can be sure our project as a success. </p>
+            <div class="left"><h2>New Main Navigation on <span class="nowrap">E-commerce</span> Site</h2></div>
+            <div class="right">
+                <h3>summary</h3>
+                <p>Analyze our customers use of our current navigation and design a more useful and easy to use replacement.
+                </p>
+                <h3>problem</h3>
+                <img src="../img/st-homepage-navigation.png" alt="heatmap of the main navigation showing zero clicks">
+                <p>None of our customers were using the main navigation on our website. A recent heatmaps showed that out of 10,000 users, not one click went to the navigation. As a result, our users were using search as their primary means of locating products and information.
+                </p>
+                <h3>hypothesis</h3>
+                <p>Working with the design and product manager, I hypothesized there were several reasons why our users were not using the main navigation: the link text was too specific, confusing, and there were too many items (11 links). </p>
+                <h3>data to the rescue</h3>
+                <p>I analyzed the search term data from the website from Q1 2019. The results showed that the majority (44.8%)  of searches are for a specific author name. The next highest was topic (32.7%), followed by product title (13.1%).
+                </p>
+                <h3>proposed solution</h3>
+                <p>Working with the design and product manager, we took all this data and created a new navigation that focused on the search terms our customers used. After two sets of in-person paper prototype tests, discussions with internal product teams, and several rounds of revisions, we finalized the wireframes for the new navigation.
+                </p>
+                <p>Here is the wireframe for the main navigation:</p>
+                <img src="../img/navigation-wireframe.png" alt="navigation wireframes">
+                <p>Wireframe for the Author drop-down:</p>
+                <img src="../img/nav-author.png" alt="navigation authro drop-down">
+                <p>Wireframe for the Topic drop-down:</p>
+                <img src="../img/nav-topic.png" alt="navigation topic drop-down"> 
+                <h3>results</h3>
+                <p>The designs are complete and we are currently in the process of implementing this new navigation. It is scheduled for launch early 2020. </p>
+            </div>
         </div>
+    </section>
+    <section>
         <div class="project firstish" id="categories">
-            <h2>categories</h2>
-            <h3>summary</h3>
-            <p>One of the other improvements we are making during our move from Magento 1 to Shopify is recategorizing all of our 8.5k products. This project goes hand-in-hand with the new navigation project.</p>
-            <h3>problem</h3>
-            <p>The current product categories on our site are oddly specific, confusing, and are not industry-standard. They were chosen by the marketing department years ago, and were not looked at in an inter-departmental manner.</p>
-            <p>Since users spend the majority of their time on other websites, they have become familiar with certain category names. For example, they are used to the categories used on our competitor's websites (Amazon, Hay House, Llewellyn, Inner Traditions, Shift Networks) for our niche products. Since we don't use these industry-standard categories, our customers are not familiar with them.</p>
-            <p>Our current categories are also not industry-standard, meaning that we cannot parse our catalog to vendor feeds, such as Google, Facebook, and others. This severely limits our marketing reach.</p>
-            <h3>data to the rescue</h3>
-            <p>There were several sets of data that was used to compile our new categories. First, we used the search term data from the navigation project. The second highest (32.7%) type of search term used by our customers (Q1 2019) was topic, such as: mindfulness, meditation, yoga, etc. We then ranked the topic search terms our customers were using.</p>
-            <img src="../img/topics.png" alt="the most searched for toppics">
-            <p>This clearly showed what topics our customers are most interested in.</p>
-            <p>The second set of data we considered were the categories used by our direct competitors: Amazon, Hay House, Llewellyn, Inner Traditions, Shift Networks. We cross-referenced the common categories used by our competitors with the topic categories are customers are searching for. This produced an initial list of new categories.</p>
-            <p>The third set of data we considered were the number of products we have in the initial list of categories. There needed to be a sufficient amount of products in each category. This whittled down the initial list. </p>
-            <h3>proposed solution</h3>
-            <p>After considering the three sets of data points, we agreed on a list of 14 parent categories. The next step is to go through all 8.5k of our products and categorize them! This may seem daunting; however, we have amazing support from our leadership team and have several product-knowledged volunteers. Once this work is complete we can import this new product catalog into our Shopify ecommerce site.</p>
-            <h3>results</h3>
-            <p>We are currently in the product recategorizing stage of this project.</p>
-            <p>Since this project is so intertwined with the navigation project, we will measure the success of both projects as one. The metrics listed in the navigation description will apply to this one as well.</p>
+            <div class="left"><h2>Product Categories on <span class="nowrap">E-commerce</span> Site</h2></div>
+            <div class="right">
+                <h3>summary</h3>
+                <p>Determine new categories for all 8.5k products on an e-commerce site.</p>
+                <h3>problem</h3>
+                <p>The current product categories on our site are oddly specific, confusing, and are not industry-standard for our niche.</p>
+                <h3>data to the rescue</h3>
+                <p>There were several sets of data that was used to compile our new categories. First, we used the search term data from the website. The second highest (32.7%) type of search term used by our customers (Q1 2019) was topic, such as: mindfulness, meditation, yoga, etc. We then ranked the topic search terms our customers were using.
+                </p>
+                <img src="../img/topics.png" alt="the most searched for toppics">
+                <p>This clearly showed what topics our customers are most interested in. The second set of data we considered were the categories used by our direct competitors: Amazon, Hay House, Llewellyn, Inner Traditions, Shift Networks. The third set of data we considered were the number of products we have in the initial list of categories. There needed to be a sufficient amount of products in each category.
+                </p>
+                <h3>proposed solution</h3>
+                <p>After considering these three sets of data, we agreed on a list of 14 parent categories and 20 child categories. Several different teams then went through our entire catalog of 8.5k products and recategorized them.
+                </p>
+                <h3>results</h3>
+                <p>This newly recategorized product catalog has been uploaded to our under-construction site. The website is scheduled for launch early 2020.
+                </p>
+            </div>
         </div> 
+    </section>
+    <section>
         <div class="project second" id="pwa">
-            <h2>digital library pwa</h2>
-            <h3>summary</h3>
-            <p>The Digital Library is what customers use to consume the media they purchase from us. For example, someone purchases "Guided Mindfulness Meditation" audio download. In their Digital Library, they can listen to the product and download all of its files. We are replacing our native Digital Library apps and the Digital Library section of our website with a PWA (progressive web app). </p>
-            <h3>problem</h3>
-            <p>How are our customers currently using the Digital Library? What problems are they having? What functionality does the new pwa need to have? What user flows does it need to provide? These are all things that need to be considered for the creation of the new pwa.</p>
-            <h3>data to the rescue</h3>
-            <p>Fortunately, we have several hundred app reviews for both our iOS and Android apps. Overall, customers were initially happy when the apps first came out. However, due to the lack of regular updates and enhancements, they are now disappointed in the apps' lack of features that are commonly found in similar applications, such as iTunes, Netflix, Amazon, Audible, etc.</p>
-            <h3>proposed solution</h3>
-            <p>The need to ship a MVP quickly has restricted the list of features that are initially being implemented. The MVP will be a parity of the current experience, with a few of the glaring issues resolved, for example: customers will now be able to read an ebook directly within the pwa.</p>
-            <p>Here are the wireframes and notes for the homepage and product page for the MVP:</p>
-            <img src="../img/DL-home-notes.png" alt="pwa mobile homepage wireframes">
-            <img src="../img/DL-product-notes.png" alt="pwa mobile product wireframe">
-            <p>In future releases, we will be including these new features that customers had requested in their reviews: bookmarking within a media file, creating custom playlists, ten-second rewind and fast-forward buttons, closed captions, transcripts, keyword search, and suggesting similar products by the same author/genre.  </p>
-            <h3>research</h3>
-            <p>I have run one round of in-person paper prototype user tests. The results were promising in that no major issues were discovered. My schedule is to run a round of in-person user tests after every 2 dev sprints focusing on the new functionality that is being built.</p>
-            <h3>results</h3>
-            <p>The PWA is currently in the process of being built. We are about one-quarter of the way done.</p>
-            <p>There are several metrics that we will use to determine if our project is a success. Creating a great customer experience is a high priority for this project, so customer service calls should decrease.  Since we are incorporating cross-sells in the PWA, something we’ve never had before, we are anticipating a certain amount of revenue.</p>
-        </div>
-        <div class="project third" id="podcast">
-            <h2>podcast & blog website</h2>
-            <h3>summary</h3>
-            <p>Currently our podcast and blog sites are separate. Our blog is on a Wordpress CMS and our podcast lives within our Magento ecommerce website. We are going to migrate both to one Wordpress instance.</p>
-            <h3>problem</h3>
-            <p>How do people consume media on our podcast and blog sites? What problems are they having? What do they like about the sites? What functionality does the new site need to have? What user flows does it need to provide? These are all things that need to be considered for the creation of the new podcast & blog site. Our current podcast and blog users are both customers and non-customers, so we have to consider the needs of both.</p>
-            <h3>data 'sort of' to the rescue</h3>
-            <p>We deployed a feedback widget on both the podcast and blog sites to try and gather information about users’ experience. We asked one question, “Help us improve our website! Rate your experience”.  Unfortunately, due to several rude responses we had to turn off the widget earlier than we had hoped. The general gist of the responses indicated that users were happy with the current sites. The only constructive feedback we received that we could apply to the new site is to make the text easier to read - in effect, increase the font size.</p>
-            <h3>proposed solution</h3>
-            <p>Since most of the responses from the feedback widget indicated that users were happy with the current sites, we decided to keep the same functionality in the new site. However, the marketing department and project stakeholders also added a few requirements to the list, for example: promoting the author's products on a podcast/blog page. Happily, these additional requirements appeared to enhance the user experience.</p>
-            <p>Here is the wireframes for the homepage:</p>
-            <img src="../img/podcast-blog-notes.png" alt="pwa mobile wireframes">
-            <h3>research</h3>
-            <p>I have run one round of in-person paper prototype use tests. The results were promising in that no major issues were discovered. My schedule is to run several rounds of in-person user tests after the site is complete. I generally like to run tests after every few sprints; however the project is not being run using the Agile methodology.</p>
-            <h3>results</h3>
-            <p>The designs for the site are complete and it is currently in the process of being built.</p>
-            <p>There are several metrics that we will use to determine if our project is a success. Since we are incorporating cross-sells in this new site, something we’ve never had before, we are anticipating a certain amount of revenue. We are also incorporating a comment plugin for each blog and podcast post, something we’ve never done before. We do have an expectation that our users will be prolific in their writings, since enabling comments on some of our other products has gone well.</p>
-            <p>Another metric that we will track is customer engagement. We are focused on creating a great user experience, and our goal is to have users be frequent visitors to the site.</p>
-        </div>
-        <div class="project fourth" id="course">
-            <h2>online course</h2>
-            <h3>summary</h3>
-            <p>One of our most popular products is a four-year old online course in mindfulness. It’s marketing materials and sales page has never been updated. This project was to review the marketing assets and sales page, make improvements, and hopefully gain an increase in sales.</p>
-            <h3>problem</h3>
-            <p>We use long-form sales pages, in the marketing style of DigitalMarketer. The sales page includes an immense amount of information about the product, including: product description, online course schedule and curriculum, teacher biographies, benefits of taking the course, description of bonus products, endorsements of the teachers by leading experts in the field, and payment options. This is a lot of information for the customer to take in and process in order to make a purchasing decision.</p>
-            <p>In addition to the lengthy sales page, we use dozens of emails, social media advertisements, and affiliates to market our product. This is an immense amount of visual assets. In addition to this, once the customer purchases the product, there is the online course itself.  The eight-week online course contains copy, audio and video files. None of this has been updated in four years.
-            </p>
-            <h3>data to the rescue</h3>
-            <p>I worked with the Project Manager, Design Manager and Copywriter to create a Journey Asset Map of the product. We printed out all visual assets of the product, including: marketing emails, social assets, affiliate assets, the sales page, and the online course itself. We taped these assets to a large wall and mapped out the multiple customers journeys with string.</p>
-            <img src="../img/asset-map.png" alt="journey asset map">
-            <p>We then annotated the map with data regarding each asset and journey segment. Examples were heatmap and clickmap data from the sales page and online course, clicks and resulting sales revenue from each email. We also focused on the branding, specific copy and imagery of the assets. During a customers journey were they presented with a cohesive articulation of the product, or were the different assets visually unconnected? Were each of the different customer’s journeys fluid and understandable, or were they confusing and left the customer at a dead end?
-            </p>
-            <p>I also completed a heuristic evaluation of the sales page. I used the Nielsen Norman Group’s 10 general principles for interaction design, and their UX best-practices in terms of design and layout in my review of the page.
-            </p>
-            <h3>proposed solution</h3>
-            <p>After evaluating all this data, we composed a list of changes we wanted to make to the marketing materials, sales page, and online course. Some of these changes include: tightening up the email copy and focusing on how the course will solve the customer’s problems; including a customer reviews section on the sales page; including transcripts with all audio and video content in the course itself; and maintaining a strong brand presence through the visual assets.</p>
-            <h3>results</h3>
-            <p>We are currently in the process of redesigning the marketing materials and sales page. We are on track to launch the product at the beginning of 2020.</p>
-            <p>There are several metrics that we are planning on using to measure our success. An increase in conversion rate, volume of transactions, and revenue will indicate that our project had been a success. Another method is by measuring the customer experience, through Customer Service calls and through other means such as customer surveys. If our improvements are a success, customer questions about the product should decrease, and overall product satisfaction should increase.</p>
+            <div class="left"><h2>Digital Library PWA (Progressive Web Application)</h2></div>
+            <div class="right">
+                <h3>summary</h3>
+                <p>Design the layout and user flows for our new PWA. This new PWA is replacing our native iOS and Android apps.
+                </p>
+                <h3>data to the rescue</h3>
+                <p>Fortunately, we have several hundred app reviews for both our iOS and Android apps. In general our customers disappointed in the apps' lack of features that are commonly found in similar media applications, such as iTunes, Netflix, Amazon, Audible, etc.
+                </p>
+                <h3>proposed solution</h3>
+                <p>The need to ship a MVP quickly has restricted the list of features that are initially being implemented. The MVP will be a parity of the current experience, with a few of the glaring issues resolved, for example: customers will now be able to read an ebook directly within the PWA.
+                </p>
+                <p>Wireframes and notes for the audio/video product page:</p>
+                <img src="../img/DL-audio-video-product.png" alt="mobile audio video product page wireframes">
+                <p>User flow for the Digital Library PWA:</p>
+                <img src="../img/DL-user-flow.png" alt="user flow for Digital Library">
+                <h3>research</h3>
+                <p>I designed and ran one round of in-person paper prototype user tests using my initial low-fidelity mock-ups. These tests resulted in several minor changes to the designs. I then ran a round of in-person interactive prototype tests. I built the prototype using high-fidelity Sketch designs imported into InVision. These user tests produced positive results: no major usability issues were found.
+                </p>
+                <h3>results</h3>
+                <p>The PWA is currently in the process of being built. It is scheduled to launch early 2020.</p>
+            </div>
         </div>
     </section>
 </main>
