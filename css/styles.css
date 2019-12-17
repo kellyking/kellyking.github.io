@@ -40,19 +40,26 @@ main.intro {
   width: 30%;
   float: left;
   padding-right: 1rem; }
+  /* line 41, sass/styles.scss */
+  .left h3 {
+    font-size: 1.2rem;
+    padding: 0; }
+  /* line 45, sass/styles.scss */
+  .left ul {
+    padding-left: 1.7rem; }
 
-/* line 42, sass/styles.scss */
+/* line 49, sass/styles.scss */
 .right {
   width: 70%;
   float: right; }
 
-/* line 46, sass/styles.scss */
+/* line 53, sass/styles.scss */
 h1 {
   text-align: center;
   font-size: 1.5rem;
   line-height: 1.5; }
 
-/* line 51, sass/styles.scss */
+/* line 58, sass/styles.scss */
 #alpha {
   position: relative;
   height: 100vh;
@@ -61,64 +68,65 @@ h1 {
   background-position: center center;
   opacity: 0.8; }
 
-/* line 59, sass/styles.scss */
+/* line 66, sass/styles.scss */
 .content {
   padding: 2rem; }
 
-/* line 62, sass/styles.scss */
+/* line 69, sass/styles.scss */
 #portfolio {
   padding: 0 4rem 2rem 4rem;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; }
 
-/* line 68, sass/styles.scss */
+/* line 75, sass/styles.scss */
 h2 {
   font-size: 2.75rem;
   line-height: 1.5;
   padding-bottom: 2rem; }
 
-/* line 73, sass/styles.scss */
+/* line 80, sass/styles.scss */
 h3 {
   font-size: 1.75rem;
   padding: 1rem 0 1.25rem 0; }
 
-/* line 77, sass/styles.scss */
+/* line 84, sass/styles.scss */
 p, ul {
   padding-bottom: 0.5rem; }
 
-/* line 80, sass/styles.scss */
+/* line 87, sass/styles.scss */
+ul {
+  padding-left: 3rem; }
+
+/* line 90, sass/styles.scss */
 .project {
   padding: 2rem 0; }
-  /* line 82, sass/styles.scss */
-  .project ul {
-    padding-left: 3rem; }
-  /* line 85, sass/styles.scss */
+  /* line 92, sass/styles.scss */
   .project:after {
     clear: both;
     content: "";
     display: table; }
 
-/* line 91, sass/styles.scss */
+/* line 98, sass/styles.scss */
 img {
   max-width: 100%; }
 
-/* line 94, sass/styles.scss */
+/* line 101, sass/styles.scss */
 footer {
   text-align: center; }
 
-/* line 97, sass/styles.scss */
+/* line 104, sass/styles.scss */
 .nowrap {
   white-space: nowrap; }
 
 @media only screen and (max-width: 950px) {
-  /* line 101, sass/styles.scss */
+  /* line 108, sass/styles.scss */
   .left {
     width: 100%;
     float: none;
     padding: 0; }
 
-  /* line 106, sass/styles.scss */
+  /* line 113, sass/styles.scss */
   .right {
     width: 100%;
     float: none; } }
