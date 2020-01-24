@@ -1,0 +1,195 @@
+/* line 5, sass/styles-working.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* line 17, sass/styles-working.scss */
+html {
+  font-size: 16px; }
+
+/* line 20, sass/styles-working.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: ghostwhite;
+  color: black; }
+
+/* line 28, sass/styles-working.scss */
+html, body {
+  height: 100%; }
+
+/* line 31, sass/styles-working.scss */
+header {
+  position: relative;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto; }
+
+/* line 37, sass/styles-working.scss */
+main {
+  position: relative;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto; }
+
+/* line 43, sass/styles-working.scss */
+main.intro {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto; }
+
+/* line 49, sass/styles-working.scss */
+.left {
+  width: 30%;
+  float: left;
+  padding-right: 1rem; }
+  /* line 53, sass/styles-working.scss */
+  .left h3 {
+    font-size: 1.2rem;
+    padding: 0; }
+  /* line 57, sass/styles-working.scss */
+  .left ul {
+    padding-left: 1.7rem; }
+
+/* line 61, sass/styles-working.scss */
+.right {
+  width: 70%;
+  float: right; }
+
+/* line 65, sass/styles-working.scss */
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5; }
+
+/* line 70, sass/styles-working.scss */
+#alpha {
+  position: relative;
+  height: 100vh;
+  background: url(../img/sleeping-cat.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8; }
+
+/* line 78, sass/styles-working.scss */
+.content {
+  padding: 2rem; }
+
+/* line 81, sass/styles-working.scss */
+#portfolio {
+  padding: 0 4rem 2rem 4rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; }
+
+/* line 87, sass/styles-working.scss */
+h2 {
+  font-size: 2.75rem;
+  line-height: 1.5;
+  padding-bottom: 2rem; }
+
+/* line 92, sass/styles-working.scss */
+h3 {
+  font-size: 1.75rem;
+  padding: 1rem 0 1.25rem 0; }
+
+/* line 96, sass/styles-working.scss */
+p, ul {
+  padding-bottom: 0.5rem; }
+
+/* line 99, sass/styles-working.scss */
+ul {
+  padding-left: 3rem; }
+
+/* line 102, sass/styles-working.scss */
+.project {
+  padding: 2rem 0; }
+  /* line 104, sass/styles-working.scss */
+  .project:after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 110, sass/styles-working.scss */
+img {
+  max-width: 100%; }
+
+/* line 113, sass/styles-working.scss */
+footer {
+  text-align: center; }
+
+/* line 116, sass/styles-working.scss */
+.nowrap {
+  white-space: nowrap; }
+
+@media only screen and (max-width: 950px) {
+  /* line 120, sass/styles-working.scss */
+  .left {
+    width: 100%;
+    float: none;
+    padding: 0; }
+
+  /* line 125, sass/styles-working.scss */
+  .right {
+    width: 100%;
+    float: none; } }
+/* The side navigation menu */
+/* line 134, sass/styles-working.scss */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */ }
+
+/* The navigation menu links */
+/* line 148, sass/styles-working.scss */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+/* When you mouse over the navigation links, change their color */
+/* line 158, sass/styles-working.scss */
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+/* Position and style the close button (top right corner) */
+/* line 163, sass/styles-working.scss */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  /* line 173, sass/styles-working.scss */
+  .sidenav {
+    padding-top: 15px; }
+
+  /* line 174, sass/styles-working.scss */
+  .sidenav a {
+    font-size: 18px; } }
