@@ -7,13 +7,11 @@
      margin: 0;
      box-sizing: border-box;
  }
-
  $color-blue: #118381;
  $color-dark-grey: #707070;
  $color-light-grey: #e8e8e8;
  $color-lightest-grey: #fdfdfd;
  $color-link-blue: #0b4c8f;
-
 html {
     font-size: 16px;
 }
@@ -24,153 +22,73 @@ body {
      line-height: 1.5rem;
      background-color: ghostwhite;
      color: black;
+     padding: 0;
  }
 html, body {
     height: 100%;
 }
-header {
-    position: relative;
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
+nav.navbar {
+    display: inline-block;
 }
-main {
-    position: relative;
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-}
-main.intro {
-    position: relative;
-    max-width: 100%;
+.container {
     width: 100%;
-    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
-.left {
-    width: 30%;
-    float: left;
-    padding-right: 1rem;
-    h3 {
-        font-size: 1.2rem;
-        padding:0;
+.navigation {
+    background-color:antiquewhite;
+    .bg-light {
+        background-color:transparent!important;
+    }
+}
+.navigation.desktop {
+    display: none;
+    nav {
+        position: fixed;
     }
     ul {
-        padding-left: 1.7rem;
+        list-style-type: none;
+        padding: 20px 0 0 10px;
+    }
+    
+}
+.navigation-mobile {
+    display: inline-block;
+    button.open span {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 352 512'><path stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z'/></svg>");
+
+    }
+    .bg-light {
+        background-color: antiquewhite!important;
     }
 }
-.right {
-    width: 70%;
-    float: right;
+main.container {
+    padding-top: 40px;
+    margin-left: 20px;
 }
-h1 {
-    text-align: center;
-    font-size: 1.5rem;  
-    line-height: 1.5;
-}
-#alpha {
-    position: relative;
-    height: 100vh;
-    background: url(../img/sleeping-cat.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 0.8;
-}
-.content {
-        padding: 2rem;
-}
-#portfolio {
-    padding: 0 4rem 2rem 4rem;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-h2 {
-    font-size: 2.75rem;
-    line-height: 1.5;
-    padding-bottom: 2rem;
-}
-h3 {
-    font-size: 1.75rem;
-    padding: 1rem 0 1.25rem 0;
-}
-p, ul {
-    padding-bottom: 0.5rem;
-}
+
 ul {
-    padding-left:3rem;
-}
-.project {
-    padding: 2rem 0;
-    &:after {
-        clear: both;
-        content: "";
-        display: table;
-    }
+    margin-left: 20px;
 }
 img {
-    max-width: 100%;
+    width: 100%;
 }
-footer {
-    text-align: center;
-}
-.nowrap {
-    white-space: nowrap;
-}
-@media only screen and (max-width: 950px) {
-    .left {
-        width: 100%;
-        float: none;
-        padding: 0;
-    }
-    .right {
-        width: 100%;
-        float: none;
-    }
-}
-////////
-// navigation
-/////////
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
 
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .navigation.desktop {
+        display: block;
+    }
+    .navigation-mobile {
+        display: none;
+    }
+    main.container {
+        padding-top: 0;
+        margin-left: 0;
+    }
+}
