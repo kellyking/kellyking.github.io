@@ -24,16 +24,22 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Welcome <span class="sr-only">(current)</span></a>
+                  <a href="#welcome" data-toggle="offcanvas">About Me <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Redesign</a>
+                  <a href="#sales-page" data-toggle="offcanvas">Optimize Product Sales Page</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Categories</a>
+                  <a href="#main-nav" data-toggle="offcanvas">Redesign Ecom Site Navigation</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Microsite</a>
+                  <a href="#categories" data-toggle="offcanvas">Recategorize Ecom Products</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#pwa" data-toggle="offcanvas">Design Digital Library PWA</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#microsite" data-toggle="offcanvas">Design Product Microsite</a>
                 </li>
               </ul>
             </div>
@@ -43,33 +49,46 @@
       <main role="main" class="container">
         <div class="container">
             <div class="row">
-              <div class="col-lg-3 navigation desktop">
+              <div class="col-lg-4 navigation desktop">
                 <nav>
                     <div>
                       <ul>
                         <li>
-                          <a href="#sales-page">Product Sales Page <span class="sr-only">(current)</span></a>
+                          <a href="#welcome">About Me <span class="sr-only">(current)</span></a>
                         </li>
                         <li>
-                          <a href="#main-nav">Main Navigation</a>
+                          <a href="#sales-page">Optimize Product Sales Page</a>
                         </li>
                         <li>
-                          <a href="#categories">Product Categories</a>
+                          <a href="#main-nav">Redesign Ecom Site Navigation</a>
                         </li>
                         <li>
-                          <a href="#pwa">Digital Library PWA</a>
+                          <a href="#categories">Recategorize Ecom Products</a>
                         </li>
                         <li>
-                            <a href="#microsite">Microsite Design</a>
+                          <a href="#pwa">Design Digital Library PWA</a>
+                        </li>
+                        <li>
+                            <a href="#microsite">Design Product Microsite</a>
                         </li>
                       </ul>
                     </div>
                   </nav>
               </div>
-              <div class="col-lg-9">
+              <div class="col-lg-8" id="welcome">
                 <section>
-                    <div class="project" id="sales-page">
-                            <h2>Product Sales Page</h2>
+                  <div class="project">
+                    <h2>Who I am & what I do</h2>
+                    <p>
+                      I am a user researcher, interaction designer, and front-end developer. When collaborating with my team I bring the customer’s voice into the forefront of the conversation. By focusing on research, analytics, and best-practices I strive to make inclusive, accessible, and exceptional user experiences.</p>
+                      <p>Credentials include degrees in Architecture (BS) and Computer Art (MFA), and certification in User Experience (NNG) and User Experience Research (MeasuringU).</p>
+                      <p>Here are some of the most recent projects I've been working on:</p>
+                    </p>
+                  </div>
+                </section>
+                <section id="sales-page">
+                    <div class="project">
+                            <h2>Optimize Product Sales Page</h2>
                             <h3>skills</h3>
                             <ul>
                                 <li>Workshops</li>
@@ -78,6 +97,7 @@
                                 <li>UX best-practices</li>
                             </ul>
                             <h3>summary</h3>
+                            <img src="../img/poa-old.jpg" alt="the existing sales page">
                             <p>One of our most popular products is a four-year old online course in mindfulness. The course’s marketing materials (email, social, affiliate) and long-form sales page have never been updated. Sales had plateaued.</p>
                             <p>My task was to review the marketing materials and sales page and make suggestions for improvement with the goal of increasing sales. </p>
                             <h3>research</h3>
@@ -105,15 +125,15 @@
                             </ul>
                             </p>
                             <h3>results</h3>
-                            <p>The marketing materials and sales page were redesigned and launched. Marketing started November 2019 and will end the beginning of February 2020. 
+                            <img src="../img/poa-new.png" alt="the newly redesigned sales page">
+                            <p>The marketing materials and sales page were redesigned and launched. Marketing started November 2019 and will end the beginning of February 2020. Here is a link to the redesigned page: <a href="https://product.soundstrue.com/power-of-awareness/" target="_blank">https://product.soundstrue.com/power-of-awareness/</a>
                             </p>
                             <p>There are several metrics that we are tracking to determine our success with the redesign. One metric we are tracking is the total number of product sales. With only a third of the way into the marketing window, the redesign has an average of 8.9 sales per day, while the previous version had an average of 6 sales per day. This is a 67% improvement in product sales. For a $297 product this should result in an increase of $75,500 additional sales dollars for this one launch. We tend to market this product several times per year; 5 times in 2019. If we continue this marketing pattern for next year, the redesign should result in an increase of $377,500 for 2020.</p>
                     </div>
                 </section>
-                <section>
-                    <div class="project" id="main-nav">
-                        <div class="left">
-                            <h2>Main Navigation</h2>
+                <section id="main-nav">
+                    <div class="project">
+                            <h2>Redesign Ecom Site Navigation</h2>
                             <h3>skills</h3>
                             <ul>
                                 <li>Quantitative data analysis</li>
@@ -121,14 +141,13 @@
                                 <li>Wireframing</li>
                                 <li>Collaboration</li>
                             </ul>
-                        </div>
-                        <div class="right">
                             <h3>summary</h3>
                             <p>Analyze our customers use of our current navigation and design a more useful and usable replacement.
                             </p>
                             <h3>problem</h3>
-                            <img src="../img/st-homepage-navigation.png" alt="heatmap of the main navigation showing zero clicks">
-                            <p>None of our customers were using the main navigation on our website. A recent heatmap showed that out of 10,000 users, not one click went to the navigation. As a result, our users were using search as their primary means of locating products and information.
+                            <img src="../img/homepage-nav-desktop.png" alt="heatmap of the main navigation showing zero clicks on desktop">
+                            <img src="../img/homepage-nav-mobile.png" alt="heatmap of the main navigation on mobile">
+                            <p>None of our customers were using the main navigation on our website on desktop. A recent heatmap showed that out of 10,000 users, not one click went to the navigation. On mobile, the navigation was being used more, a little over 56% of the clicks went to the navigation. As a result, our users were using search as their primary means of locating products and information.
                             </p>
                             <p>A navigation should help users quickly find the product they are looking for by immediately narrowing our catalog. By defaulting to search, users were presented with a large search result list that they then had to filter themselves.</p>
                             <h3>hypothesis</h3>
@@ -145,13 +164,12 @@
                             <h3>current status</h3>
                             <p>A Digital Designer created high fidelity mock-ups from these designs and we are currently in the process of implementing this new navigation. It is scheduled for launch early 2020. I am planning on doing remote user tests after the launch to determine the usefulness and usability of the new navigation.
                             </p>
-                        </div>
                     </div>
                 </section>
-                <section>
-                    <div class="project" id="categories">
+                <section id="categories">
+                    <div class="project">
                         <div class="left">
-                            <h2>Product Categories</h2>
+                            <h2>Recategorize Ecom Products</h2>
                             <h3>skills</h3>
                             <ul>
                                 <li>Quantitative data analysis</li>
@@ -174,10 +192,10 @@
                         </div>
                     </div> 
                 </section>
-                <section>
-                    <div class="project" id="pwa">
+                <section id="pwa">
+                    <div class="project">
                         <div class="left">
-                            <h2>Digital Library PWA</h2>
+                            <h2>Design Digital Library PWA</h2>
                             <h3>skills</h3>
                             <ul>
                                 <li>Qualitative data analysis</li>
@@ -212,10 +230,10 @@
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div class="project" id="microsite">
+                <section id="microsite">
+                    <div class="project">
                         <div class="left">
-                            <h2>Microsite Design</h2>
+                            <h2>Design Product Microsite</h2>
                             <h3>skills</h3>
                             <ul>
                                 <li>Design</li>
@@ -244,8 +262,12 @@
                             <p>Unfortunately, there was not enough time in the product schedule to run any user tests on the wireframes.
                             </p>
                             <h3>current status</h3>
-                            <p>After final approval, the Digital Designer will create high-fidelity mock-ups and the Web Developer will build the microsite in a Wordpress environment.  It is scheduled to launch in early 2020. The price point for the course is around $8k and the project is projected to bring in around $4m.
+                            <p>The microsite was built and launched mid-January 2020. The price point for the course is around $8k and the project is projected to bring in around $4m. Here is a link to the finshed microsite <a href="https://innermba.soundstrue.com/home-a/" target="_blank">https://innermba.soundstrue.com/home-a/</a>
                             </p>
+                            <p>We are currently in the process of running a redirect test on the homepage of the microsite. Here are the two versions of the page:</p>
+                            <img src="../img/Inner-MBA-version-A.png" alt="version A">
+                            <img src="../img/Inner-MBA-version-B.png" alt="version B">
+                            <p>The main differences between the two versions are the background images used. One uses focuses on images of people, and the other focuses on background colors and gradients. After running the A/B test for only one week, the data shows that there isn't much difference between the two. It's about a 50/50 draw.</p>
                         </div>
                     </div>
                 </section>

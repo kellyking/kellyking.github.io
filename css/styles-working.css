@@ -14,19 +14,19 @@ body {
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.5rem;
-  background-color: ghostwhite;
-  color: black;
+  background-color: #fdfdfd;
+  color: #707070;
   padding: 0; }
 
-/* line 27, sass/styles-working.scss */
+/* line 28, sass/styles-working.scss */
 html, body {
   height: 100%; }
 
-/* line 30, sass/styles-working.scss */
+/* line 31, sass/styles-working.scss */
 nav.navbar {
   display: inline-block; }
 
-/* line 33, sass/styles-working.scss */
+/* line 34, sass/styles-working.scss */
 .container {
   width: 100%;
   padding-right: 0;
@@ -34,62 +34,89 @@ nav.navbar {
   margin-right: 0;
   margin-left: 0; }
 
-/* line 40, sass/styles-working.scss */
+/* line 41, sass/styles-working.scss */
 .navigation {
-  background-color: antiquewhite; }
-  /* line 42, sass/styles-working.scss */
+  background-color: #e8e8e8; }
+  /* line 43, sass/styles-working.scss */
   .navigation .bg-light {
     background-color: transparent !important; }
 
-/* line 46, sass/styles-working.scss */
+/* line 47, sass/styles-working.scss */
 .navigation.desktop {
   display: none; }
-  /* line 48, sass/styles-working.scss */
+  /* line 49, sass/styles-working.scss */
   .navigation.desktop nav {
     position: fixed; }
-  /* line 51, sass/styles-working.scss */
+  /* line 52, sass/styles-working.scss */
   .navigation.desktop ul {
     list-style-type: none;
     padding: 20px 0 0 10px; }
+    /* line 55, sass/styles-working.scss */
+    .navigation.desktop ul a {
+      font-size: 1.05rem;
+      font-weight: 600;
+      padding: 10px 0 10px 0;
+      display: inline-block;
+      line-height: 1.5;
+      color: #0b4c8f; }
 
-/* line 57, sass/styles-working.scss */
+/* line 66, sass/styles-working.scss */
 .navigation-mobile {
   display: inline-block; }
-  /* line 59, sass/styles-working.scss */
+  /* line 68, sass/styles-working.scss */
   .navigation-mobile button.open span {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 352 512'><path stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z'/></svg>"); }
-  /* line 63, sass/styles-working.scss */
+  /* line 72, sass/styles-working.scss */
   .navigation-mobile .bg-light {
-    background-color: antiquewhite !important; }
+    background-color: #e8e8e8 !important; }
+  /* line 75, sass/styles-working.scss */
+  .navigation-mobile a {
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 10px 0 10px 0;
+    display: inline-block;
+    line-height: 1.5;
+    color: #0b4c8f; }
 
-/* line 67, sass/styles-working.scss */
+/* line 84, sass/styles-working.scss */
 main.container {
   padding-top: 40px;
   margin-left: 20px; }
 
-/* line 72, sass/styles-working.scss */
+/* line 88, sass/styles-working.scss */
+.project {
+  padding-top: 2rem; }
+
+/* line 91, sass/styles-working.scss */
+section {
+  padding-top: 2.5rem; }
+  /* line 93, sass/styles-working.scss */
+  section:first-of-type {
+    padding-top: 0; }
+
+/* line 98, sass/styles-working.scss */
 ul {
   margin-left: 20px; }
 
-/* line 75, sass/styles-working.scss */
+/* line 101, sass/styles-working.scss */
 img {
   width: 100%; }
 
 @media (min-width: 992px) {
-  /* line 80, sass/styles-working.scss */
+  /* line 106, sass/styles-working.scss */
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: column;
     flex-direction: column; }
 
-  /* line 84, sass/styles-working.scss */
+  /* line 110, sass/styles-working.scss */
   .navigation.desktop {
     display: block; }
 
-  /* line 87, sass/styles-working.scss */
+  /* line 113, sass/styles-working.scss */
   .navigation-mobile {
     display: none; }
 
-  /* line 90, sass/styles-working.scss */
+  /* line 116, sass/styles-working.scss */
   main.container {
     padding-top: 0;
     margin-left: 0; } }
