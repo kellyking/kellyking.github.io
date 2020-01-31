@@ -11,22 +11,22 @@ html {
 /* line 18, sass/styles-working.scss */
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
   background-color: #fdfdfd;
   color: #707070;
   padding: 0; }
 
-/* line 28, sass/styles-working.scss */
+/* line 27, sass/styles-working.scss */
 html, body {
   height: 100%; }
 
-/* line 31, sass/styles-working.scss */
+/* line 30, sass/styles-working.scss */
 nav.navbar {
   display: inline-block; }
 
-/* line 34, sass/styles-working.scss */
+/* line 33, sass/styles-working.scss */
 .container {
   width: 100%;
   padding-right: 0;
@@ -35,23 +35,98 @@ nav.navbar {
   margin-left: 0; }
 
 /* line 41, sass/styles-working.scss */
-.navigation {
-  background-color: #e8e8e8; }
-  /* line 43, sass/styles-working.scss */
-  .navigation .bg-light {
-    background-color: transparent !important; }
+main.container {
+  padding-top: 40px;
+  margin-left: 20px; }
 
-/* line 47, sass/styles-working.scss */
+/* line 45, sass/styles-working.scss */
+.project {
+  padding-top: 2rem; }
+
+/* line 48, sass/styles-working.scss */
+section {
+  padding-top: 2.5rem; }
+  /* line 50, sass/styles-working.scss */
+  section:first-of-type {
+    padding-top: 0; }
+
+/* line 54, sass/styles-working.scss */
+.logo {
+  background-color: #0580A6;
+  width: 100px;
+  height: 100px;
+  font-family: 'Shadows Into Light', cursive;
+  display: inline-block;
+  border-radius: 100%;
+  position: relative; }
+  /* line 62, sass/styles-working.scss */
+  .logo:after {
+    content: 'KK';
+    color: white;
+    font-size: 5.3rem;
+    top: 37px;
+    left: 11px;
+    position: absolute;
+    letter-spacing: -6px; }
+
+/* line 72, sass/styles-working.scss */
+h1 {
+  color: #0580A6;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top; }
+  /* line 79, sass/styles-working.scss */
+  h1 .subtitle {
+    display: block;
+    font-size: 2rem; }
+
+/* line 84, sass/styles-working.scss */
+h2 {
+  font-size: 2rem;
+  color: #0580A6;
+  font-weight: 700;
+  border-bottom: 5px solid #0580A6;
+  padding-bottom: 3px;
+  margin-bottom: 2rem; }
+
+/* line 92, sass/styles-working.scss */
+h3 {
+  font-size: 1.55rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  color: #0580A6; }
+
+/* line 98, sass/styles-working.scss */
+.project ul.skills {
+  margin-left: 20px;
+  list-style-type: disc; }
+
+/* line 104, sass/styles-working.scss */
+img {
+  width: 100%; }
+
+/* line 107, sass/styles-working.scss */
+ul {
+  list-style-type: disc;
+  margin-left: 20px; }
+
+/* line 112, sass/styles-working.scss */
+.navigation .bg-light {
+  background-color: transparent !important; }
+
+/* line 116, sass/styles-working.scss */
 .navigation.desktop {
   display: none; }
-  /* line 49, sass/styles-working.scss */
+  /* line 118, sass/styles-working.scss */
   .navigation.desktop nav {
     position: fixed; }
-  /* line 52, sass/styles-working.scss */
+  /* line 121, sass/styles-working.scss */
   .navigation.desktop ul {
     list-style-type: none;
     padding: 20px 0 0 10px; }
-    /* line 55, sass/styles-working.scss */
+    /* line 124, sass/styles-working.scss */
     .navigation.desktop ul a {
       font-size: 1.05rem;
       font-weight: 600;
@@ -60,16 +135,20 @@ nav.navbar {
       line-height: 1.5;
       color: #0b4c8f; }
 
-/* line 66, sass/styles-working.scss */
+/* line 135, sass/styles-working.scss */
 .navigation-mobile {
   display: inline-block; }
-  /* line 68, sass/styles-working.scss */
+  /* line 137, sass/styles-working.scss */
+  .navigation-mobile button span {
+    background-image: url("../img/menu.png"); }
+  /* line 140, sass/styles-working.scss */
   .navigation-mobile button.open span {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 352 512'><path stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z'/></svg>"); }
-  /* line 72, sass/styles-working.scss */
+    color: #0b4c8f;
+    background-image: url("../img/close.png"); }
+  /* line 146, sass/styles-working.scss */
   .navigation-mobile .bg-light {
-    background-color: #e8e8e8 !important; }
-  /* line 75, sass/styles-working.scss */
+    background-color: #fdfdfd !important; }
+  /* line 149, sass/styles-working.scss */
   .navigation-mobile a {
     font-size: 1.05rem;
     font-weight: 600;
@@ -78,45 +157,43 @@ nav.navbar {
     line-height: 1.5;
     color: #0b4c8f; }
 
-/* line 84, sass/styles-working.scss */
-main.container {
-  padding-top: 40px;
-  margin-left: 20px; }
-
-/* line 88, sass/styles-working.scss */
-.project {
-  padding-top: 2rem; }
-
-/* line 91, sass/styles-working.scss */
-section {
-  padding-top: 2.5rem; }
-  /* line 93, sass/styles-working.scss */
-  section:first-of-type {
-    padding-top: 0; }
-
-/* line 98, sass/styles-working.scss */
-ul {
-  margin-left: 20px; }
-
-/* line 101, sass/styles-working.scss */
-img {
-  width: 100%; }
+/* line 158, sass/styles-working.scss */
+.row {
+  margin-right: 25px; }
 
 @media (min-width: 992px) {
-  /* line 106, sass/styles-working.scss */
+  /* line 162, sass/styles-working.scss */
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: column;
     flex-direction: column; }
 
-  /* line 110, sass/styles-working.scss */
+  /* line 166, sass/styles-working.scss */
   .navigation.desktop {
     display: block; }
 
-  /* line 113, sass/styles-working.scss */
+  /* line 169, sass/styles-working.scss */
   .navigation-mobile {
     display: none; }
 
-  /* line 116, sass/styles-working.scss */
+  /* line 172, sass/styles-working.scss */
   main.container {
     padding-top: 0;
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  /* line 176, sass/styles-working.scss */
+  .row {
+    margin-right: -15px; }
+
+  /* line 179, sass/styles-working.scss */
+  .project ul.skills {
+    margin-left: 20px;
+    list-style-type: none; }
+    /* line 182, sass/styles-working.scss */
+    .project ul.skills li {
+      display: inline-block;
+      margin-right: 20px;
+      padding-right: 20px;
+      border-right: 1px solid #707070; }
+      /* line 187, sass/styles-working.scss */
+      .project ul.skills li:last-of-type {
+        border-right: 0; } }

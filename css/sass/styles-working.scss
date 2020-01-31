@@ -7,7 +7,7 @@
      margin: 0;
      box-sizing: border-box;
  }
- $color-blue: #118381;
+ $color-blue: #0580A6;
  $color-dark-grey: #707070;
  $color-light-grey: #e8e8e8;
  $color-lightest-grey: #fdfdfd;
@@ -16,13 +16,12 @@ html {
     font-size: 16px;
 }
 body {
-     font-family: 'Open Sans', sans-serif;
-     font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+     font-weight: 400;
      font-size: 1rem;
      line-height: 1.5rem;
      background-color:$color-lightest-grey;
      color:  $color-dark-grey;
-     ;
      padding: 0;
  }
 html, body {
@@ -38,8 +37,78 @@ nav.navbar {
     margin-right: 0;
     margin-left: 0;
 }
+
+main.container {
+    padding-top: 40px;
+    margin-left: 20px;
+}
+.project {
+    padding-top: 2rem;
+}
+section {
+    padding-top:2.5rem;
+    &:first-of-type {
+        padding-top:0;
+    }
+}
+.logo {
+    background-color: $color-blue;
+    width: 100px;
+    height: 100px;
+    font-family: 'Shadows Into Light', cursive;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+    &:after {
+        content: 'KK';
+        color: white;
+        font-size: 5.3rem;
+        top: 37px;
+        left: 11px;
+        position: absolute;
+        letter-spacing: -6px;
+    }
+}
+h1 {
+    color: $color-blue;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    .subtitle {
+        display: block;
+        font-size: 2rem;
+    }
+}
+h2 {
+    font-size: 2rem;
+    color:$color-blue;
+    font-weight: 700;
+    border-bottom: 5px solid $color-blue;
+    padding-bottom: 3px;
+    margin-bottom: 2rem;
+}
+h3 {
+    font-size: 1.55rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    color:$color-blue;
+}
+.project ul.skills {
+    margin-left: 20px;
+    list-style-type: disc;
+    li {
+    }
+}
+img {
+    width: 100%;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
 .navigation {
-    background-color:$color-light-grey;
     .bg-light {
         background-color:transparent!important;
     }
@@ -65,12 +134,17 @@ nav.navbar {
 }
 .navigation-mobile {
     display: inline-block;
+    button span {
+        background-image:url('../img/menu.png');
+    }
     button.open span {
-        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 352 512'><path stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z'/></svg>");
+        color: $color-link-blue;
+        // background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 352 512'><path stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z'/></svg>");
+        background-image:url('../img/close.png');
 
     }
     .bg-light {
-        background-color:$color-light-grey!important;
+        background-color:$color-lightest-grey!important;
     }
     a {
         font-size: 1.05rem;
@@ -81,27 +155,9 @@ nav.navbar {
         color: $color-link-blue;
     }
 }
-main.container {
-    padding-top: 40px;
-    margin-left: 20px;
+.row {
+    margin-right: 25px;
 }
-.project {
-    padding-top: 2rem;
-}
-section {
-    padding-top:2.5rem;
-    &:first-of-type {
-        padding-top:0;
-    }
-}
-
-ul {
-    margin-left: 20px;
-}
-img {
-    width: 100%;
-}
-
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav {
         -ms-flex-direction: column;
@@ -116,5 +172,21 @@ img {
     main.container {
         padding-top: 0;
         margin-left: 0;
+    }
+    .row {
+        margin-right: -15px;
+    }
+    .project ul.skills {
+        margin-left: 20px;
+        list-style-type: none;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            padding-right: 20px;
+            border-right:1px solid $color-dark-grey;
+            &:last-of-type {
+                border-right: 0;
+            }
+        }
     }
 }
