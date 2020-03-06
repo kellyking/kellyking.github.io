@@ -4,11 +4,11 @@
   margin: 0;
   box-sizing: border-box; }
 
-/* line 15, sass/styles-working.scss */
+/* line 14, sass/styles-working.scss */
 html {
   font-size: 16px; }
 
-/* line 18, sass/styles-working.scss */
+/* line 17, sass/styles-working.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -18,15 +18,15 @@ body {
   color: #707070;
   padding: 0; }
 
-/* line 27, sass/styles-working.scss */
+/* line 26, sass/styles-working.scss */
 html, body {
   height: 100%; }
 
-/* line 30, sass/styles-working.scss */
+/* line 29, sass/styles-working.scss */
 nav.navbar {
   display: inline-block; }
 
-/* line 33, sass/styles-working.scss */
+/* line 32, sass/styles-working.scss */
 .container {
   width: 100%;
   padding-right: 0;
@@ -34,32 +34,32 @@ nav.navbar {
   margin-right: 0;
   margin-left: 0; }
 
-/* line 41, sass/styles-working.scss */
+/* line 40, sass/styles-working.scss */
 main.container {
   padding-top: 40px;
   margin-left: 20px; }
 
-/* line 45, sass/styles-working.scss */
+/* line 44, sass/styles-working.scss */
 .project {
   padding-top: 2rem; }
 
-/* line 48, sass/styles-working.scss */
+/* line 47, sass/styles-working.scss */
 section {
   padding-top: 2.5rem; }
-  /* line 50, sass/styles-working.scss */
+  /* line 49, sass/styles-working.scss */
   section:first-of-type {
     padding-top: 0; }
 
-/* line 54, sass/styles-working.scss */
+/* line 53, sass/styles-working.scss */
 .logo {
-  background-color: #0580A6;
+  background-color: #707070;
   width: 100px;
   height: 100px;
   font-family: 'Shadows Into Light', cursive;
   display: inline-block;
   border-radius: 100%;
   position: relative; }
-  /* line 62, sass/styles-working.scss */
+  /* line 61, sass/styles-working.scss */
   .logo:after {
     content: 'KK';
     color: white;
@@ -69,64 +69,64 @@ section {
     position: absolute;
     letter-spacing: -6px; }
 
-/* line 72, sass/styles-working.scss */
+/* line 71, sass/styles-working.scss */
 h1 {
-  color: #0580A6;
+  color: #707070;
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
   display: inline-block;
   vertical-align: top; }
-  /* line 79, sass/styles-working.scss */
+  /* line 78, sass/styles-working.scss */
   h1 .subtitle {
     display: block;
     font-size: 2rem; }
 
-/* line 84, sass/styles-working.scss */
+/* line 83, sass/styles-working.scss */
 h2 {
   font-size: 2rem;
-  color: #0580A6;
+  color: #707070;
   font-weight: 700;
-  border-bottom: 5px solid #0580A6;
+  border-bottom: 5px solid #707070;
   padding-bottom: 3px;
   margin-bottom: 2rem; }
 
-/* line 92, sass/styles-working.scss */
+/* line 91, sass/styles-working.scss */
 h3 {
   font-size: 1.55rem;
   margin-bottom: 1rem;
   padding-top: 0.5rem;
-  color: #0580A6; }
+  color: #707070; }
 
-/* line 98, sass/styles-working.scss */
+/* line 97, sass/styles-working.scss */
 .project ul.skills {
   margin-left: 20px;
   list-style-type: disc; }
 
-/* line 104, sass/styles-working.scss */
+/* line 103, sass/styles-working.scss */
 img {
   width: 100%; }
 
-/* line 107, sass/styles-working.scss */
+/* line 106, sass/styles-working.scss */
 ul {
   list-style-type: disc;
   margin-left: 20px; }
 
-/* line 112, sass/styles-working.scss */
+/* line 111, sass/styles-working.scss */
 .navigation .bg-light {
   background-color: transparent !important; }
 
-/* line 116, sass/styles-working.scss */
+/* line 115, sass/styles-working.scss */
 .navigation.desktop {
   display: none; }
-  /* line 118, sass/styles-working.scss */
+  /* line 117, sass/styles-working.scss */
   .navigation.desktop nav {
     position: fixed; }
-  /* line 121, sass/styles-working.scss */
+  /* line 120, sass/styles-working.scss */
   .navigation.desktop ul {
     list-style-type: none;
     padding: 20px 0 0 10px; }
-    /* line 124, sass/styles-working.scss */
+    /* line 123, sass/styles-working.scss */
     .navigation.desktop ul a {
       font-size: 1.05rem;
       font-weight: 600;
@@ -135,20 +135,20 @@ ul {
       line-height: 1.5;
       color: #0b4c8f; }
 
-/* line 135, sass/styles-working.scss */
+/* line 134, sass/styles-working.scss */
 .navigation-mobile {
   display: inline-block; }
-  /* line 137, sass/styles-working.scss */
+  /* line 136, sass/styles-working.scss */
   .navigation-mobile button span {
     background-image: url("../img/menu.png"); }
-  /* line 140, sass/styles-working.scss */
+  /* line 139, sass/styles-working.scss */
   .navigation-mobile button.open span {
     color: #0b4c8f;
     background-image: url("../img/close.png"); }
-  /* line 146, sass/styles-working.scss */
+  /* line 145, sass/styles-working.scss */
   .navigation-mobile .bg-light {
     background-color: #fdfdfd !important; }
-  /* line 149, sass/styles-working.scss */
+  /* line 148, sass/styles-working.scss */
   .navigation-mobile a {
     font-size: 1.05rem;
     font-weight: 600;
@@ -157,43 +157,43 @@ ul {
     line-height: 1.5;
     color: #0b4c8f; }
 
-/* line 158, sass/styles-working.scss */
+/* line 157, sass/styles-working.scss */
 .row {
   margin-right: 25px; }
 
 @media (min-width: 992px) {
-  /* line 162, sass/styles-working.scss */
+  /* line 161, sass/styles-working.scss */
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: column;
     flex-direction: column; }
 
-  /* line 166, sass/styles-working.scss */
+  /* line 165, sass/styles-working.scss */
   .navigation.desktop {
     display: block; }
 
-  /* line 169, sass/styles-working.scss */
+  /* line 168, sass/styles-working.scss */
   .navigation-mobile {
     display: none; }
 
-  /* line 172, sass/styles-working.scss */
+  /* line 171, sass/styles-working.scss */
   main.container {
     padding-top: 0;
     margin-left: 0; }
 
-  /* line 176, sass/styles-working.scss */
+  /* line 175, sass/styles-working.scss */
   .row {
     margin-right: -15px; }
 
-  /* line 179, sass/styles-working.scss */
+  /* line 178, sass/styles-working.scss */
   .project ul.skills {
     margin-left: 20px;
     list-style-type: none; }
-    /* line 182, sass/styles-working.scss */
+    /* line 181, sass/styles-working.scss */
     .project ul.skills li {
       display: inline-block;
       margin-right: 20px;
       padding-right: 20px;
       border-right: 1px solid #707070; }
-      /* line 187, sass/styles-working.scss */
+      /* line 186, sass/styles-working.scss */
       .project ul.skills li:last-of-type {
         border-right: 0; } }
