@@ -7,11 +7,11 @@
      margin: 0;
      box-sizing: border-box;
  }
- $color-blue: #0580A6;
- $color-dark-grey: #707070;
+ $color-dark-grey: #343434;
  $color-light-grey: #e8e8e8;
  $color-lightest-grey: #fdfdfd;
- $color-link-blue: #0b4c8f;
+ $color-link-blue:#20399D;
+ $color-link-hover:#FFFF40;
 html {
     font-size: 16px;
 }
@@ -51,26 +51,8 @@ section {
         padding-top:0;
     }
 }
-.logo {
-    background-color: $color-blue;
-    width: 100px;
-    height: 100px;
-    font-family: 'Shadows Into Light', cursive;
-    display: inline-block;
-    border-radius: 100%;
-    position: relative;
-    &:after {
-        content: 'KK';
-        color: white;
-        font-size: 5.3rem;
-        top: 37px;
-        left: 11px;
-        position: absolute;
-        letter-spacing: -6px;
-    }
-}
 h1 {
-    color: $color-blue;
+    color: $color-dark-grey;
     font-size: 3rem;
     font-weight: 700;
     margin: 0;
@@ -83,9 +65,9 @@ h1 {
 }
 h2 {
     font-size: 2rem;
-    color:$color-blue;
+    color:$color-dark-grey;
     font-weight: 700;
-    border-bottom: 5px solid $color-blue;
+    border-bottom: 5px solid $color-dark-grey;
     padding-bottom: 3px;
     margin-bottom: 2rem;
 }
@@ -93,12 +75,27 @@ h3 {
     font-size: 1.55rem;
     margin-bottom: 1rem;
     padding-top: 0.5rem;
-    color:$color-blue;
+    color:$color-dark-grey;
 }
 .project ul.skills {
     margin-left: 20px;
     list-style-type: disc;
     li {
+    }
+}
+a {
+    color: $color-link-blue;
+    text-decoration: underline;
+    &:visited {
+        color: $color-link-blue;
+    }
+    &:hover {
+        color: $color-link-blue;
+        background-color: $color-link-hover;
+    }
+    &:active {
+        color: $color-link-blue;
+        background-color:transparent;
     }
 }
 img {
@@ -128,6 +125,17 @@ ul {
             display: inline-block;
             line-height: 1.5;
             color: $color-link-blue;
+            &:visited {
+                color: $color-link-blue;
+            }
+            &:hover {
+                color: $color-link-blue;
+                background-color:transparent;
+            }
+            &:active {
+                color: $color-link-blue;
+                background-color:transparent;
+            }
         }
     }
     
@@ -176,7 +184,7 @@ ul {
     .row {
         margin-right: -15px;
     }
-    .project ul.skills {
+/*     .project ul.skills {
         margin-left: 20px;
         list-style-type: none;
         li {
@@ -188,5 +196,5 @@ ul {
                 border-right: 0;
             }
         }
-    }
+    } */
 }

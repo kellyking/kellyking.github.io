@@ -4,29 +4,29 @@
   margin: 0;
   box-sizing: border-box; }
 
-/* line 14, sass/styles-working.scss */
+/* line 15, sass/styles-working.scss */
 html {
   font-size: 16px; }
 
-/* line 17, sass/styles-working.scss */
+/* line 18, sass/styles-working.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
   background-color: #fdfdfd;
-  color: #707070;
+  color: #343434;
   padding: 0; }
 
-/* line 26, sass/styles-working.scss */
+/* line 27, sass/styles-working.scss */
 html, body {
   height: 100%; }
 
-/* line 29, sass/styles-working.scss */
+/* line 30, sass/styles-working.scss */
 nav.navbar {
   display: inline-block; }
 
-/* line 32, sass/styles-working.scss */
+/* line 33, sass/styles-working.scss */
 .container {
   width: 100%;
   padding-right: 0;
@@ -34,166 +34,174 @@ nav.navbar {
   margin-right: 0;
   margin-left: 0; }
 
-/* line 40, sass/styles-working.scss */
+/* line 41, sass/styles-working.scss */
 main.container {
   padding-top: 40px;
   margin-left: 20px; }
 
-/* line 44, sass/styles-working.scss */
+/* line 45, sass/styles-working.scss */
 .project {
   padding-top: 2rem; }
 
-/* line 47, sass/styles-working.scss */
+/* line 48, sass/styles-working.scss */
 section {
   padding-top: 2.5rem; }
-  /* line 49, sass/styles-working.scss */
+  /* line 50, sass/styles-working.scss */
   section:first-of-type {
     padding-top: 0; }
 
-/* line 53, sass/styles-working.scss */
-.logo {
-  background-color: #707070;
-  width: 100px;
-  height: 100px;
-  font-family: 'Shadows Into Light', cursive;
-  display: inline-block;
-  border-radius: 100%;
-  position: relative; }
-  /* line 61, sass/styles-working.scss */
-  .logo:after {
-    content: 'KK';
-    color: white;
-    font-size: 5.3rem;
-    top: 37px;
-    left: 11px;
-    position: absolute;
-    letter-spacing: -6px; }
-
-/* line 71, sass/styles-working.scss */
+/* line 54, sass/styles-working.scss */
 h1 {
-  color: #707070;
+  color: #343434;
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
   display: inline-block;
   vertical-align: top; }
-  /* line 78, sass/styles-working.scss */
+  /* line 61, sass/styles-working.scss */
   h1 .subtitle {
     display: block;
     font-size: 2rem; }
 
-/* line 83, sass/styles-working.scss */
+/* line 66, sass/styles-working.scss */
 h2 {
   font-size: 2rem;
-  color: #707070;
+  color: #343434;
   font-weight: 700;
-  border-bottom: 5px solid #707070;
+  border-bottom: 5px solid #343434;
   padding-bottom: 3px;
   margin-bottom: 2rem; }
 
-/* line 91, sass/styles-working.scss */
+/* line 74, sass/styles-working.scss */
 h3 {
   font-size: 1.55rem;
   margin-bottom: 1rem;
   padding-top: 0.5rem;
-  color: #707070; }
+  color: #343434; }
 
-/* line 97, sass/styles-working.scss */
+/* line 80, sass/styles-working.scss */
 .project ul.skills {
   margin-left: 20px;
   list-style-type: disc; }
 
-/* line 103, sass/styles-working.scss */
+/* line 86, sass/styles-working.scss */
+a {
+  color: #20399D;
+  text-decoration: underline; }
+  /* line 89, sass/styles-working.scss */
+  a:visited {
+    color: #20399D; }
+  /* line 92, sass/styles-working.scss */
+  a:hover {
+    color: #20399D;
+    background-color: #FFFF40; }
+  /* line 96, sass/styles-working.scss */
+  a:active {
+    color: #20399D;
+    background-color: transparent; }
+
+/* line 101, sass/styles-working.scss */
 img {
   width: 100%; }
 
-/* line 106, sass/styles-working.scss */
+/* line 104, sass/styles-working.scss */
 ul {
   list-style-type: disc;
   margin-left: 20px; }
 
-/* line 111, sass/styles-working.scss */
+/* line 109, sass/styles-working.scss */
 .navigation .bg-light {
   background-color: transparent !important; }
 
-/* line 115, sass/styles-working.scss */
+/* line 113, sass/styles-working.scss */
 .navigation.desktop {
   display: none; }
-  /* line 117, sass/styles-working.scss */
+  /* line 115, sass/styles-working.scss */
   .navigation.desktop nav {
     position: fixed; }
-  /* line 120, sass/styles-working.scss */
+  /* line 118, sass/styles-working.scss */
   .navigation.desktop ul {
     list-style-type: none;
     padding: 20px 0 0 10px; }
-    /* line 123, sass/styles-working.scss */
+    /* line 121, sass/styles-working.scss */
     .navigation.desktop ul a {
       font-size: 1.05rem;
       font-weight: 600;
       padding: 10px 0 10px 0;
       display: inline-block;
       line-height: 1.5;
-      color: #0b4c8f; }
+      color: #20399D; }
+      /* line 128, sass/styles-working.scss */
+      .navigation.desktop ul a:visited {
+        color: #20399D; }
+      /* line 131, sass/styles-working.scss */
+      .navigation.desktop ul a:hover {
+        color: #20399D;
+        background-color: transparent; }
+      /* line 135, sass/styles-working.scss */
+      .navigation.desktop ul a:active {
+        color: #20399D;
+        background-color: transparent; }
 
-/* line 134, sass/styles-working.scss */
+/* line 143, sass/styles-working.scss */
 .navigation-mobile {
   display: inline-block; }
-  /* line 136, sass/styles-working.scss */
+  /* line 145, sass/styles-working.scss */
   .navigation-mobile button span {
     background-image: url("../img/menu.png"); }
-  /* line 139, sass/styles-working.scss */
+  /* line 148, sass/styles-working.scss */
   .navigation-mobile button.open span {
-    color: #0b4c8f;
+    color: #20399D;
     background-image: url("../img/close.png"); }
-  /* line 145, sass/styles-working.scss */
+  /* line 154, sass/styles-working.scss */
   .navigation-mobile .bg-light {
     background-color: #fdfdfd !important; }
-  /* line 148, sass/styles-working.scss */
+  /* line 157, sass/styles-working.scss */
   .navigation-mobile a {
     font-size: 1.05rem;
     font-weight: 600;
     padding: 10px 0 10px 0;
     display: inline-block;
     line-height: 1.5;
-    color: #0b4c8f; }
+    color: #20399D; }
 
-/* line 157, sass/styles-working.scss */
+/* line 166, sass/styles-working.scss */
 .row {
   margin-right: 25px; }
 
 @media (min-width: 992px) {
-  /* line 161, sass/styles-working.scss */
+  /* line 170, sass/styles-working.scss */
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: column;
     flex-direction: column; }
 
-  /* line 165, sass/styles-working.scss */
+  /* line 174, sass/styles-working.scss */
   .navigation.desktop {
     display: block; }
 
-  /* line 168, sass/styles-working.scss */
+  /* line 177, sass/styles-working.scss */
   .navigation-mobile {
     display: none; }
 
-  /* line 171, sass/styles-working.scss */
+  /* line 180, sass/styles-working.scss */
   main.container {
     padding-top: 0;
     margin-left: 0; }
 
-  /* line 175, sass/styles-working.scss */
+  /* line 184, sass/styles-working.scss */
   .row {
     margin-right: -15px; }
 
-  /* line 178, sass/styles-working.scss */
-  .project ul.skills {
-    margin-left: 20px;
-    list-style-type: none; }
-    /* line 181, sass/styles-working.scss */
-    .project ul.skills li {
-      display: inline-block;
-      margin-right: 20px;
-      padding-right: 20px;
-      border-right: 1px solid #707070; }
-      /* line 186, sass/styles-working.scss */
-      .project ul.skills li:last-of-type {
-        border-right: 0; } }
+  /*     .project ul.skills {
+          margin-left: 20px;
+          list-style-type: none;
+          li {
+              display: inline-block;
+              margin-right: 20px;
+              padding-right: 20px;
+              border-right:1px solid $color-dark-grey;
+              &:last-of-type {
+                  border-right: 0;
+              }
+          }
+      } */ }
