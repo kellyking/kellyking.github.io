@@ -105,25 +105,61 @@ img {
   width: 100%; }
 
 /* line 104, sass/styles-working.scss */
+img.image-half {
+  width: 40%; }
+  /* line 106, sass/styles-working.scss */
+  img.image-half.second {
+    margin: 0 0 0 1rem; }
+
+/* line 110, sass/styles-working.scss */
+img.image-quarter {
+  width: 25%; }
+
+/* line 113, sass/styles-working.scss */
 ul {
   list-style-type: disc;
   margin-left: 20px; }
 
-/* line 109, sass/styles-working.scss */
+/* line 117, sass/styles-working.scss */
+figure {
+  background-color: #ededed;
+  padding: 0.5rem; }
+
+/* line 121, sass/styles-working.scss */
+figcaption {
+  font-style: italic;
+  margin: 1rem 0 0 0; }
+
+/* line 125, sass/styles-working.scss */
+blockquote {
+  background: #ededed url("../img/quotes.png") no-repeat top left;
+  padding: 2rem; }
+  /* line 128, sass/styles-working.scss */
+  blockquote p {
+    margin: 0 0 0 3rem;
+    font-size: 0.9rem; }
+  /* line 132, sass/styles-working.scss */
+  blockquote cite {
+    font-size: 0.9rem;
+    text-align: right;
+    display: block;
+    margin: 0.5rem 0 0 0; }
+
+/* line 140, sass/styles-working.scss */
 .navigation .bg-light {
   background-color: transparent !important; }
 
-/* line 113, sass/styles-working.scss */
+/* line 144, sass/styles-working.scss */
 .navigation.desktop {
   display: none; }
-  /* line 115, sass/styles-working.scss */
+  /* line 146, sass/styles-working.scss */
   .navigation.desktop nav {
     position: fixed; }
-  /* line 118, sass/styles-working.scss */
+  /* line 149, sass/styles-working.scss */
   .navigation.desktop ul {
     list-style-type: none;
     padding: 20px 0 0 10px; }
-    /* line 121, sass/styles-working.scss */
+    /* line 152, sass/styles-working.scss */
     .navigation.desktop ul a {
       font-size: 1.05rem;
       font-weight: 600;
@@ -131,32 +167,32 @@ ul {
       display: inline-block;
       line-height: 1.5;
       color: #20399D; }
-      /* line 128, sass/styles-working.scss */
+      /* line 159, sass/styles-working.scss */
       .navigation.desktop ul a:visited {
         color: #20399D; }
-      /* line 131, sass/styles-working.scss */
+      /* line 162, sass/styles-working.scss */
       .navigation.desktop ul a:hover {
         color: #20399D;
         background-color: transparent; }
-      /* line 135, sass/styles-working.scss */
+      /* line 166, sass/styles-working.scss */
       .navigation.desktop ul a:active {
         color: #20399D;
         background-color: transparent; }
 
-/* line 143, sass/styles-working.scss */
+/* line 174, sass/styles-working.scss */
 .navigation-mobile {
   display: inline-block; }
-  /* line 145, sass/styles-working.scss */
+  /* line 176, sass/styles-working.scss */
   .navigation-mobile button span {
     background-image: url("../img/menu.png"); }
-  /* line 148, sass/styles-working.scss */
+  /* line 179, sass/styles-working.scss */
   .navigation-mobile button.open span {
     color: #20399D;
     background-image: url("../img/close.png"); }
-  /* line 154, sass/styles-working.scss */
+  /* line 185, sass/styles-working.scss */
   .navigation-mobile .bg-light {
     background-color: #fdfdfd !important; }
-  /* line 157, sass/styles-working.scss */
+  /* line 188, sass/styles-working.scss */
   .navigation-mobile a {
     font-size: 1.05rem;
     font-weight: 600;
@@ -165,43 +201,33 @@ ul {
     line-height: 1.5;
     color: #20399D; }
 
-/* line 166, sass/styles-working.scss */
+/* line 197, sass/styles-working.scss */
 .row {
   margin-right: 25px; }
 
 @media (min-width: 992px) {
-  /* line 170, sass/styles-working.scss */
+  /* line 201, sass/styles-working.scss */
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: column;
     flex-direction: column; }
 
-  /* line 174, sass/styles-working.scss */
+  /* line 205, sass/styles-working.scss */
   .navigation.desktop {
     display: block; }
 
-  /* line 177, sass/styles-working.scss */
+  /* line 208, sass/styles-working.scss */
   .navigation-mobile {
     display: none; }
 
-  /* line 180, sass/styles-working.scss */
+  /* line 211, sass/styles-working.scss */
   main.container {
     padding-top: 0;
     margin-left: 0; }
 
-  /* line 184, sass/styles-working.scss */
+  /* line 215, sass/styles-working.scss */
   .row {
     margin-right: -15px; }
 
-  /*     .project ul.skills {
-          margin-left: 20px;
-          list-style-type: none;
-          li {
-              display: inline-block;
-              margin-right: 20px;
-              padding-right: 20px;
-              border-right:1px solid $color-dark-grey;
-              &:last-of-type {
-                  border-right: 0;
-              }
-          }
-      } */ }
+  /* line 218, sass/styles-working.scss */
+  figure {
+    padding: 2rem; } }
