@@ -7,7 +7,7 @@
      margin: 0;
      box-sizing: border-box;
  }
- $color-dark-grey: #343434;
+ $color-dark-grey:#434443;
  $color-light-grey: #e8e8e8;
  $color-lightest-grey: #fdfdfd;
  $color-link-blue:#20399D;
@@ -155,17 +155,19 @@ blockquote {
             padding: 10px 0 10px 0;
             display: inline-block;
             line-height: 1.5;
-            color: $color-link-blue;
+            color: #434443;
+            text-decoration: none;
             &:visited {
-                color: $color-link-blue;
+                color: #434443;
             }
             &:hover {
-                color: $color-link-blue;
-                background-color:transparent;
+                color: #434443;
+                text-decoration: underline;
+                background-color: transparent;
             }
             &:active {
-                color: $color-link-blue;
-                background-color:transparent;
+                color: #434443;
+                text-decoration: underline;
             }
         }
     }
@@ -178,7 +180,6 @@ blockquote {
     }
     button.open span {
         color: $color-link-blue;
-        // background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 352 512'><path stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z'/></svg>");
         background-image:url('../img/close.png');
 
     }
@@ -191,7 +192,12 @@ blockquote {
         padding: 10px 0 10px 0;
         display: inline-block;
         line-height: 1.5;
-        color: $color-link-blue;
+        color: $color-dark-grey;
+        text-decoration: none;
+
+        &:hover {
+            background-color: transparent;
+        }
     }
 }
 .row {
@@ -204,6 +210,8 @@ blockquote {
     }
     .navigation.desktop {
         display: block;
+        background-color: #F6F7F6;
+        border-right: 1px solid #EEEFEE;
     }
     .navigation-mobile {
         display: none;

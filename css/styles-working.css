@@ -15,7 +15,7 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   background-color: #fdfdfd;
-  color: #343434;
+  color: #434443;
   padding: 0; }
 
 /* line 27, sass/styles-working.scss */
@@ -52,7 +52,7 @@ section {
 
 /* line 54, sass/styles-working.scss */
 h1 {
-  color: #343434;
+  color: #434443;
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
@@ -66,9 +66,9 @@ h1 {
 /* line 66, sass/styles-working.scss */
 h2 {
   font-size: 2rem;
-  color: #343434;
+  color: #434443;
   font-weight: 700;
-  border-bottom: 5px solid #343434;
+  border-bottom: 5px solid #434443;
   padding-bottom: 3px;
   margin-bottom: 2rem; }
 
@@ -77,7 +77,7 @@ h3 {
   font-size: 1.55rem;
   margin-bottom: 1rem;
   padding-top: 0.5rem;
-  color: #343434; }
+  color: #434443; }
 
 /* line 80, sass/styles-working.scss */
 .project ul.skills {
@@ -166,68 +166,76 @@ blockquote {
       padding: 10px 0 10px 0;
       display: inline-block;
       line-height: 1.5;
-      color: #20399D; }
-      /* line 159, sass/styles-working.scss */
+      color: #434443;
+      text-decoration: none; }
+      /* line 160, sass/styles-working.scss */
       .navigation.desktop ul a:visited {
-        color: #20399D; }
-      /* line 162, sass/styles-working.scss */
+        color: #434443; }
+      /* line 163, sass/styles-working.scss */
       .navigation.desktop ul a:hover {
-        color: #20399D;
+        color: #434443;
+        text-decoration: underline;
         background-color: transparent; }
-      /* line 166, sass/styles-working.scss */
+      /* line 168, sass/styles-working.scss */
       .navigation.desktop ul a:active {
-        color: #20399D;
-        background-color: transparent; }
+        color: #434443;
+        text-decoration: underline; }
 
-/* line 174, sass/styles-working.scss */
+/* line 176, sass/styles-working.scss */
 .navigation-mobile {
   display: inline-block; }
-  /* line 176, sass/styles-working.scss */
+  /* line 178, sass/styles-working.scss */
   .navigation-mobile button span {
     background-image: url("../img/menu.png"); }
-  /* line 179, sass/styles-working.scss */
+  /* line 181, sass/styles-working.scss */
   .navigation-mobile button.open span {
     color: #20399D;
     background-image: url("../img/close.png"); }
-  /* line 185, sass/styles-working.scss */
+  /* line 186, sass/styles-working.scss */
   .navigation-mobile .bg-light {
     background-color: #fdfdfd !important; }
-  /* line 188, sass/styles-working.scss */
+  /* line 189, sass/styles-working.scss */
   .navigation-mobile a {
     font-size: 1.05rem;
     font-weight: 600;
     padding: 10px 0 10px 0;
     display: inline-block;
     line-height: 1.5;
-    color: #20399D; }
+    color: #434443;
+    text-decoration: none; }
+    /* line 198, sass/styles-working.scss */
+    .navigation-mobile a:hover {
+      background-color: transparent; }
 
-/* line 197, sass/styles-working.scss */
+/* line 203, sass/styles-working.scss */
 .row {
   margin-right: 25px; }
 
 @media (min-width: 992px) {
-  /* line 201, sass/styles-working.scss */
+  /* line 207, sass/styles-working.scss */
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: column;
     flex-direction: column; }
 
-  /* line 205, sass/styles-working.scss */
+  /* line 211, sass/styles-working.scss */
   .navigation.desktop {
-    display: block; }
+    display: block;
+    background-color: #F6F7F6;
+    border-right: 1px solid #EEEFEE; }
 
-  /* line 208, sass/styles-working.scss */
+  /* line 216, sass/styles-working.scss */
   .navigation-mobile {
     display: none; }
 
-  /* line 211, sass/styles-working.scss */
+  /* line 219, sass/styles-working.scss */
   main.container {
     padding-top: 0;
     margin-left: 0; }
 
-  /* line 215, sass/styles-working.scss */
+  /* line 223, sass/styles-working.scss */
   .row {
     margin-right: -15px; }
 
-  /* line 218, sass/styles-working.scss */
+  /* line 226, sass/styles-working.scss */
   figure {
     padding: 2rem; } }
