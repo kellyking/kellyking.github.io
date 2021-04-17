@@ -210,32 +210,50 @@ blockquote {
 /* line 203, sass/styles-working.scss */
 .row {
   margin-right: 25px; }
+  /* line 205, sass/styles-working.scss */
+  .row.background {
+    background: transparent url(../img/profile.jpg) no-repeat center;
+    min-height: 200px;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    color: white;
+    display: block; }
+    /* line 213, sass/styles-working.scss */
+    .row.background p {
+      text-align: center;
+      display: block;
+      padding: 50px 0 0 0; }
+
+/* line 220, sass/styles-working.scss */
+.last {
+  padding-bottom: 4rem; }
 
 @media (min-width: 992px) {
-  /* line 207, sass/styles-working.scss */
+  /* line 224, sass/styles-working.scss */
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: column;
     flex-direction: column; }
 
-  /* line 211, sass/styles-working.scss */
+  /* line 228, sass/styles-working.scss */
   .navigation.desktop {
     display: block;
     background-color: #F6F7F6;
     border-right: 1px solid #EEEFEE; }
 
-  /* line 216, sass/styles-working.scss */
+  /* line 233, sass/styles-working.scss */
   .navigation-mobile {
     display: none; }
 
-  /* line 219, sass/styles-working.scss */
+  /* line 236, sass/styles-working.scss */
   main.container {
     padding-top: 0;
     margin-left: 0; }
 
-  /* line 223, sass/styles-working.scss */
+  /* line 240, sass/styles-working.scss */
   .row {
     margin-right: -15px; }
 
-  /* line 226, sass/styles-working.scss */
+  /* line 243, sass/styles-working.scss */
   figure {
     padding: 2rem; } }
