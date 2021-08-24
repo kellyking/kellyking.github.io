@@ -66,6 +66,68 @@ main {
     width: 100%;
     text-align: left;
     margin: 0 auto;
+
+    .step-UI {
+        margin: 20px 0 40px 0;
+        border:1px solid #eeeeee;
+        .step {
+            width:33.33%;
+            float: left;
+            padding: 8px 8px 2px 8px;
+            background-color: #F1F0EF;
+            border:3px solid white;
+            h2 {
+                font-family: 'Playfair Display', serif;
+                font-size: 0.95rem;
+                font-weight: 500;
+                width: 75%;
+                line-height: 1.2rem;
+                padding-bottom: 3px;
+            }
+            p {
+                font-size: 0.85rem;
+                line-height: 1rem;
+                &.links {
+                    font-size: 0.8rem;
+                    text-align: right;
+                }
+                &.price {
+                    padding-bottom: 1rem;
+                    text-align: right;
+                }
+            }
+            img {
+                width: 100%;
+                max-width: 60px;
+            }
+            &.three {
+                border-bottom: 1px solid #999;
+                box-shadow: 0px 3px #ededed;
+            }
+            .col-1 {
+                width: 70px;
+                float: left;
+            }
+            .col-2 {
+                width: calc(100% - 190px);
+                float: left;
+            }
+            .col-3 {
+                width: 120px;
+                float: left;
+            }
+            &::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        }
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
     
     .breadcrumbs {
         text-align: left;
@@ -665,6 +727,9 @@ main {
         }
         .row {
             margin-bottom: 40px;
+            p.answer {
+                padding: 10px 0 0 30px;
+            }
             .left {
                 width: 20%;
                 float: left;
