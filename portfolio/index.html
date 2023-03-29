@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelly King - UX Engineer</title>
+    <title>Kelly King - UX Researcher</title>
     <meta name="author" content="Kelly King">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -28,11 +28,17 @@
                   <a href="#welcome" data-toggle="offcanvas">About Me <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a href="#pwa" data-toggle="offcanvas">Digital Library PWA</a>
+                  <a href="#s-pdp" data-toggle="offcanvas">Product Detail Page Testing</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#sales-page" data-toggle="offcanvas">Optimize Product Sales Page</a>
+                  <a href="#s-favorites" data-toggle="offcanvas">Guest Favorites</a>
                 </li>
+                <li class="nav-item">
+                  <a href="#pwa" data-toggle="offcanvas">Digital Library PWA</a>
+                </li>
+<!--                 <li class="nav-item">
+                  <a href="#sales-page" data-toggle="offcanvas">Optimize Product Sales Page</a>
+                </li> -->
                 <li class="nav-item">
                   <a href="#main-nav" data-toggle="offcanvas">Redesign Site Navigation</a>
                 </li>
@@ -54,11 +60,17 @@
                           <a href="#welcome">About Me <span class="sr-only">(current)</span></a>
                         </li>
                         <li>
-                          <a href="#pwa">Digital Library PWA</a>
+                          <a href="#s-pdp">Product Detail Page Testing</a>
                         </li>
                         <li>
-                          <a href="#sales-page">Optimize Product Sales Page</a>
+                          <a href="#s-favorites">Guest Favorites</a>
                         </li>
+                        <li>
+                          <a href="#pwa">Digital Library PWA</a>
+                        </li>
+<!--                         <li>
+                          <a href="#sales-page">Optimize Product Sales Page</a>
+                        </li> -->
                         <li>
                           <a href="#main-nav">Redesign Site Navigation</a>
                         </li>
@@ -72,17 +84,81 @@
               <div class="col-lg-8" id="welcome">
                 <section>
                   <div class="project">
-                    <h1>Kelly King<span class="subtitle">UX Engineer & Researcher</span></h1>
+                    <h1>Kelly King<span class="subtitle">UX Researcher</span></h1>
                   </div>
                 </section>
                 <section>
                   <div class="project">
                     <h2>Who I am & what I do</h2>
                     <p>
-                      I am a user researcher, interaction designer, and accessibility specialist with 15+ years experience working in ecommerce. When collaborating with my team I bring the customer’s voice to the forefront of the conversation. By focusing on research, analytics, and best-practices I strive to make inclusive, accessible, and exceptional user experiences.</p>
+                      I am a user researcher, interaction designer, and accessibility specialist with 15+ years experience working in ecommerce. When collaborating with my team I bring the customer's voice to the forefront of the conversation. By focusing on research, analytics, and best-practices I strive to make inclusive, accessible, and exceptional user experiences.</p>
                       <p>My credentials include degrees in Architecture (BS) and Computer Art (MFA), and certification in User Experience (NNG), User Experience Research (MeasuringU), and Web Accessibility (IAAP WAS).</p>
                   </div>
                 </section>
+                <section id="s-pdp">
+                  <div class="project">
+                      <div class="left">
+                          <h2>Product Detail Page Testing</h2>
+                          <h3>skills</h3>
+                          <ul class="skills">
+                              <li>Wireframing</li>
+                              <li>CSS &amp; jQuery</li>
+                              <li>AB Testing</li>
+                              <li>Quantitative Data Analysis</li>
+                          </ul>
+                      </div>
+                      <div class="right">
+                          <h3>summary</h3>
+                          <p>A new PDP (Product Detail Page) redesign was deployed in early 2022. However, we were disappointed in its performance. We hypothesized that one of the reasons for this lackluster performance was the amount of scrolling required to reach the main CTA. The main CTA was quite a way down the page: 2 full page scrolls on desktop and 4 on mobile.
+                          </p>
+                          <h3>testing</h3>
+                          <p>The goal of the test was to see if compressing the page and moving up the main CTA would help customers continue their shopping journey. We ran the test only on a subset of PDPs. There were three different variants in the test:</p>
+                          <ol>
+                            <li>Original: no changes made to the page.</li>
+                            <li>Variant B: page is compressed. (The main CTA was slightly below the average fold on desktop.)</li>
+                            <li>Variant C: page is compressed and the main CTA was moved above a Preview Options section. (The main CTA is above the average fold on desktop.)</li>
+                          </ol>
+                          <figure>
+                            <img src="../img/shane-pdp.png" alt="original and the two variants">
+                            <figcaption>Left to right: Original, Variant B, and Variant C. The main CTA is the large dark grey button.</figcaption>
+                          </figure>
+                          <p>I wrote the CSS and jQuery to make the modifications to the PDP, and ran the test in Google Optimize. The test was for all customers in all device types. Our determining metric was clicks to the main CTA.</p>
+                          <h3>results</h3>
+                          <p>We only needed to run the test for 7 days before generating statistically relevant data. Variant B had a statistically significant improvement in both clicks to the main CTA and unique product purchases; it also had the highest probability to be the best for both metrics. In addition, the 2 new variants contributed an additional 6-figures in product revenue during these 7 days. </p>
+                          <h3>next steps</h3>
+                          <p>We deployed the winning variant to 100% of <a rel="noreferrer" href="https://www.shaneco.com/engagement-rings/classic-engagement-rings/timeless-natural-diamond-engagement-ring-with-pave-setting/p/41048069" target="_blank">the subset of PDPs</a> and began the process of updating all the PDP templates to include this compressed style. </p>
+                      </div>
+                  </div>
+              </section>
+              <section id="s-favorites">
+                <div class="project">
+                    <div class="left">
+                        <h2>Guest Favorites</h2>
+                        <h3>skills</h3>
+                        <ul class="skills">
+                            <li>Competitive Analysis</li>
+                            <li>Quantitative Data Analysis</li>
+                            <li>Wireframing</li>
+                            <li>User Flows</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>summary</h3>
+                        <p>While working on another project (Sign In, Create Account, & Reset Password) I was analyzing data for several different customer segments on our ecom site. Customers who create Favorites have a triple-digit percent increase in conversion rate, as compared to all customers. There was also a significant increase in product favoriting in the 2 months prior to the Christmas holiday. This was an action we wanted to promote on our site and make as easy as possible.
+                        </p>
+                        <h3>research</h3>
+                        <p>I completed a competitive analysis of 12 other ecom sites, the majority in our industry. A large percentage of these competitors allow for not-logged-in customers to create favorites on their site - guest favorites. I then documented and analyzed the functionality and user flows of the guest favoriting process on these sites. </p>
+                        <h3>deliverables</h3>
+                        <p>I completed user flow diagrams and page wireframes (with annotations for user interactions) to illustrate how adding guest favorites would function within our current ecom site. I also wrote a short creative brief for our design and development teams that included the key interactions and research for adding guest favorites. I presented the creative brief along with the user flows and wireframes to our design team. We discussed how guest favorites would function and the UI that would need to be modified and created.</p>
+                        <figure>
+                          <img src="../img/shane-favorites.png" alt="User flow for guest favorites">
+                          <figcaption>One of the user flows for guest favorites</figcaption>
+                        </figure>
+                        <h3>next steps</h3>
+                        <p>This project is currently being worked on by the desgin team and should be deployed by the end of 2023.</p>
+                    </div>
+                </div>
+            </section>
                 <section id="pwa">
                   <div class="project">
                       <div class="left">
@@ -125,22 +201,22 @@
                           </p>
                           <figure>
                             <img src="../img/DL-user-flow.png" alt="user flow for Digital Library">
-                            <figcaption>The user flow for the entire PWA, created with FlowMapp.</figcaption>
+                            <figcaption>The user flow for the PWA.</figcaption>
                           </figure>
                           <figure>
                             <img src="../img/DL-audio-video-product.png" alt="mobile audio video product page wireframes">
-                            <figcaption>My initial mobile wireframes and functionality notes for the product page for the MVP, created in Balsamiq.</figcaption>
+                            <figcaption>Initial mobile wireframes and functionality notes for the product page for the MVP.</figcaption>
                           </figure>
                           <h3>research</h3>
-                          <p>I designed and ran one round of in-person paper prototype user tests using my initial low-fidelity wireframes. These tests resulted in several minor changes to the designs, for example changing a heading on one of the pages.
+                          <p>I ran one round of in-person paper prototype user tests using my initial low-fidelity wireframes. These tests resulted in several minor changes to the designs, for example changing a heading on one of the pages.
                           </p>
                           <p>I then collaborated with our Digital Designer on the high-fidelity mock-ups. Using the mock-ups, I ran a round of remote interactive prototype tests. These user tests produced positive results: no major usability issues were found.</p>
                           <figure>
                             <img class="image-half" src="../img/DL-prototype-my-library.jpg" alt="My Library page">
                             <img class="image-half second" src="../img/DL-prototype-product-page.jpg" alt="Product page">
-                            <figcaption>Screenshots from the prototype built in InVision using exports from Sketch.</figcaption>
+                            <figcaption>Screenshots from the high-fidelity prototype.</figcaption>
                           </figure>
-                          <p>Once the developers completed building the new PWA, I ran a beta test with my fellow co-workers (100+). The test consisted of users completing multiple end-to-end tasks: completing a purchase on our e-commerce site and then consuming the product on the PWA. One glaring issue emerged that was not expected: one of the main pages of the PWA, a product-marketing page, was so similar to our e-commerce website homepage that users thought they were on our e-commerce site. Since the functionality of the two sites are completely different, users were confused when they were unsuccessful completing e-commerce tasks on the PWA.
+                          <p>Once the developers completed building the new PWA, I ran a beta test with my fellow co-workers (100+). The test consisted of users completing multiple end-to-end tasks. One glaring issue emerged that was not expected: one of the main pages of the PWA, a product-marketing page, was so similar to our e-commerce website homepage that users thought they were on our e-commerce site. Since the functionality of the two sites are completely different, users were confused when they were unsuccessful completing e-commerce tasks on the PWA.
                           </p>
                           <blockquote>
                             <p>“My first reaction was that I was not in my digital library as it took me to what looked like a version of our website”.</p><br>
@@ -151,18 +227,18 @@
                           </blockquote>
                           <p>I recommended that we remove the marketing page. There was an initial push-back against removing the revenue-generating page. We compromised by removing the page and replacing it with a ‘Shop’ link to our e-commerce site. I ran another beta test with a select group of co-workers, and this time there wasn’t any confusion between two sites.</p>
                           <h3>accessibility review</h3>
-                          <p>While the developers were building out the pages of the PWA, I worked with our QA Engineer to complete an accessibility review. Our QA Engineer ran the Chrome plugin Axe on the pages, and I completed manual accessibility tests using VoiceOver on Chrome. We compiled our issues into a spreadsheet where I ranked all the issues on a 4-point severity scale. I made notes for both the automated and manual-found issues, describing the problem and offered coding suggestions for remedy. The most severe issues were fixed for the MVP. </p>
+                          <p>While the developers were building out the pages of the PWA, I worked with our QA Engineer to complete an automated and manual accessibility review. We compiled our issues and ranked all the issues on a 4-point severity scale. I made notes for both the automated and manual issues, describing the problem and offered coding suggestions for remedy. The most severe issues were fixed for the MVP. </p>
                           <h3>current status</h3>
                           <figure>
                             <img class="image-half" src="../img/PWA-log-in.PNG" alt="log in page">
                             <img class="image-half second" src="../img/PWA-my-library.PNG" alt="My Library page">
                             <figcaption>The Log In and My Library page of the current PWA.</figcaption>
                           </figure>
-                          <p>The <a href="https://digitallibrary.soundstrue.com/login" target="_blank">PWA</a> launched at the end of April 2020. There were some unavoidable issues, such as users having trouble resetting their password (a requirement for switching platforms), but overall it was a success. The PWA has held a steady 6% conversion rate for purchases. There are two places where we encourage users to make a purchase: the “Shop” link in the navigation, and a “more from this author” link on each purchased product page.</p>
+                          <p>The <a href="https://digitallibrary.soundstrue.com/login" target="_blank">PWA</a> launched at the end of April 2020. There were some unavoidable issues, such as users having trouble resetting their password (a requirement for switching platforms), but overall it was a success. The PWA has held a steady 6% conversion rate for purchases.</p>
                       </div>
                   </div>
               </section>
-                <section id="sales-page">
+<!--                 <section id="sales-page">
                     <div class="project">
                             <h2>Optimize Product Sales Page</h2>
                             <h3>skills</h3>
@@ -201,7 +277,7 @@
                             <h3>results</h3>
                             <p>The marketing materials and <a href="https://product.soundstrue.com/power-of-awareness/?sq=1" target="_blank">sales page</a> were redesigned based on my recommendations. The first launch resulted in an increase of 256% in unique product purchases from the last launch of the old design. The second launch resulted in an increase of 370% in unique product purchases from the last launch of the old design. We are continuing to see a large increase in purchases launch-after-launch.</p>
                     </div>
-                </section>
+                </section> -->
                 <section id="main-nav">
                     <div class="project">
                             <h2>Redesign Site Navigation</h2>
@@ -214,11 +290,11 @@
                                 <li>Collaboration</li>
                             </ul>
                             <h3>summary</h3>
-                            <p>I analyze our customers' use of the navigation on our e-commerce site and helped design a more useful and usable replacement.
+                            <p>I analyzed our customers' use of the navigation on our e-commerce site and helped design a more useful and usable replacement.
                             </p>
-                            <p>The updated navigation is a great success. Heat maps show that customers' usage of the navigation greatly increased. The products featured in the navigation have increased in sales - percent increase per unique product purchase ranges from 92% to 1950%. Our site usability score also increased from an average of 3.05 (on a Likert 5-point scale) in January of 2020 to 3.97 in July 2020.</p>
+                            <p>The updated navigation is a great success. Heat maps show that customers' usage of the navigation greatly increased. The products featured in the navigation have increased in sales - percent increase in product purchase ranged from high double-digits to low 4-digits. Our site usability score also increased an average of 0.94 points (on a Likert 5-point scale).</p>
                             <h3>problem</h3>
-                            <p>None of our customers were using the main navigation on our website. A recent click map of the homepage showed that out of 10,000 users, the navigation received 0% of clicks. As a result, our users were using search as their primary means of locating products and information. By defaulting to search, users were presented with a large search result list that they then had to filter themselves.  
+                            <p>None of our customers were using the main navigation on our website. A recent click map of the homepage showed that out of 10k users, the navigation received 0% of clicks. As a result, our users were using search as their primary means of locating products and information. By defaulting to search, users were presented with a large search result list that they then had to filter themselves.  
                             </p>
                             <figure>
                               <img src="../img/homepage-nav-desktop.png" alt="heatmap of the main navigation showing zero clicks on desktop">
@@ -230,11 +306,11 @@
                               <cite>Common complaint from our customers</cite>
                             </blockquote>
                             <h3>research</h3>
-                            <p>I analyzed our customers’ search terms from Q1 2019. The data showed that the majority (44.8%) of searches are for a specific author name, followed by topic (32.7%), and then by product title (13.1%). The navigation did not highlight these popular search areas. 
+                            <p>I analyzed our customers’ search terms. The data showed that the majority of searches are for a specific author name, followed by topic of interest, and then by product title. The navigation did not highlight these popular search areas. 
                             </p>
                             <figure>
                               <img src="../img/search-terms-Q1-2019.png" alt="customer search terms">
-                              <figcaption>Pie chart showing customer search terms percentages for Q1 2019.</figcaption>
+                              <figcaption>Pie chart showing customer search terms percentages.</figcaption>
                             </figure>
                             <h3>solution</h3>
                             <p>Working with the Digital Design and Product Manager, I used this data to design a new navigation that focused on the search terms our customers used. 
@@ -246,15 +322,12 @@
                               <figcaption>The wireframes for the main navigation and two of the drop-downs. The drop-downs activate on hover (on desktop) using an intelligent delay functionality.</figcaption>
                             </figure>
                             <h3>current status</h3>
-                            <p>The <a href="https://www.soundstrue.com/" target="_blank">new Shopify site</a> went live at the end of April 2020. 
+                            <p>The <a href="https://www.soundstrue.com/" target="_blank">new navigation</a> went live the beginning of 2020. 
                             </p>
-                            <p>Our heat & click map data shows that about 11.72% of clicks on the homepage were for content in the drop-downs. This is a great increase over 0% of clicks from the previous navigation.</p>
-                            <p>There are two other improvements that resulted from the new navigation. First, revenue was increased by the product placement in the menu drop-downs. The percent increase per unique product purchases ranged from 92% to 1950%. </p>
-                            <p>Second, our overall user experience scores for the e-commerce site increased. Our site usability score increased from an average of 3.05 (on a Likert 5-point scale) in January of 2020 to 3.97 in July 2020, and our repurchase score increased from an average of 3.5 in Jan 2020 to 4.35 in July 2020. </p>
+                            <p>Our heat & click map data shows that about 12% of clicks on the homepage were for content in the drop-downs. This is a great increase over 0% of clicks from the previous navigation.</p>
+                            <p>There are two other improvements that resulted from the new navigation. First, revenue was increased by the product placement in the menu drop-downs. The percent increase in product purchase ranged from high double-digits to low 4-digits. </p>
+                            <p>Second, our overall user experience scores for the e-commerce site increased. Our site usability score increased an average of 0.94 points (on a Likert 5-point scale), and our likely-to-repurchase score increased an average of 0.85 points (on a Likert 5-point scale). </p>
                             <p>I realize that the improvement in scores may not be the sole result of the new navigation; however, there were only two structural changes made during the site transition (the new navigation and a stepped checkout), so I believe the new navigation was at least partially responsible for the improvement in scores.</p>
-                            <h3>next steps</h3>
-                            <p>Unfortunately, there is a bug with the hover activation of the navigation. For users using a mouse with a touch laptop or touch monitor, the drop-downs do not close when the cursor is moved out of the drop-down. The user has to move their cursor out of the drop-down and then click on the page. This bug was revealed during remote user testing soon after the new site went live. There is a ticket to fix this issue in the backlog.
-                            </p>
                     </div>
                 </section>
                 <section id="categories" class="last">
@@ -271,12 +344,12 @@
                             <h3>summary</h3>
                             <p>The product categories on our site were oddly specific, confusing, and are not industry-standard for our niche. My task was to work with the E-commerce Product Owner to determine new categories for all 8.5k products on our site.
                             </p>
-                            <p>The new categories were published at the end of April 2020. We are now more easily able to track sales metrics by category, resulting in more information to influence future acquisitions.</p>
+                            <p>The new categories were published at the beginning of 2020. We are now more easily able to track sales metrics by category, resulting in more information to influence future acquisitions.</p>
                             <h3>research</h3>
-                            <p>There were several sets of data that I used to compile a list of possible categories. First, I used the search term data from our website. The second highest (32.7%) type of search term used by our customers (Q1 2019) was topic, such as: mindfulness, meditation, yoga, etc. I ranked the topic search terms our customers were using. This clearly showed what topics our customers are most interested in. </p>
+                            <p>There were several sets of data that I used to compile a list of possible categories. First, I used the search term data from our website. The second highest type of search term used by our customers was topic, such as: mindfulness, meditation, yoga, etc. I ranked the topic search terms our customers were using. This clearly showed what topics our customers are most interested in. </p>
                             <figure>
                               <img src="../img/topic-searchs-Q1-2019.png" alt="the most searched for topics">
-                              <figcaption>Graph showing most searched-for topics on website for Q1 2019.</figcaption>
+                              <figcaption>Graph showing most searched-for topics on website.</figcaption>
                             </figure>
                             <p>The second set of data I considered was the categories used by our direct competitors: Amazon, Hay House, Llewellyn, Inner Traditions, and Shift Networks. The third set of data I considered was the number of products we have in the initial list of categories. There needed to be a sufficient amount of products in each category.
                             </p>
@@ -287,9 +360,9 @@
                               </figcaption>
                             </figure>
                             <h3>current status</h3>
-                            <p>The <a href="https://www.soundstrue.com/" target="_blank">new Shopify site</a> The new categories are featured in the main navigation drop-downs and in the filters on search result and product category pages. I am still collecting data on the usefulness of these links and filters.
+                            <p>The <a href="https://www.soundstrue.com/" target="_blank">new ecom site</a> The new categories are featured in the main navigation drop-downs and in the filters on search result and product category pages.
                             </p>
-                            <p>One outcome is the sales metrics we can now gather from the new categories from within our ecommerce platform. Spirituality is by far the highest grossing category with revenue in the high 6-figures for Q2 2020. This information will help inform our future product acquisitions.
+                            <p>One outcome is the sales metrics we can now gather from the new categories from within our ecommerce platform. Spirituality is by far the highest grossing category with revenue in the high 6-figures. This information will help inform our future product acquisitions.
                             </p>
                         </div>
                     </div> 
