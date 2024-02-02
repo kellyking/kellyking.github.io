@@ -30,6 +30,11 @@ html, body {
 nav.navbar {
     display: inline-block;
 }
+.top-color {
+    width:100%;
+    background-image: url('../img/profile.jpg');
+    height:40px;
+}
 .container {
     width: 100%;
     padding-right: 0;

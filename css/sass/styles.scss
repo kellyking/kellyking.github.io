@@ -28,6 +28,11 @@ body {
 html, body {
     height: 100%;
 }
+.top-color {
+    width:100%;
+    background-image: url(..img/profile.jpg);
+    max-height:40px;
+}
 main {
     position: relative;
     max-width: 1200px;
