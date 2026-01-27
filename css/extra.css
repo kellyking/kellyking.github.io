@@ -55,3 +55,9 @@ h2.minor-heading {
 .skills .col {
     padding-left:0;
 }
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+}
