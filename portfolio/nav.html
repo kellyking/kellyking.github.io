@@ -141,50 +141,82 @@
   <section class="py-5 container cases">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-       <h1>Information Architecture</h1>
-       <h2>Overview</h2>
-       <p>I analyzed our customers' use of the navigation on our e-commerce site and helped design a more useful and usable replacement.
-
+       <h1>Information Architecture Redesign (Ecommerce Navigation)</h1>
+       <ul>
+        <li>Role: Lead UX Researcher</li>
+        <li>Scope: Ecommerce information architecture and primary navigation</li>
+          <li>Methods: Quantitative analysis, card sorting, usability testing</li>
+          <li>Impact: Increased navigation engagement, revenue lift, and improved UX scores</li>
+       </ul>
+       <h2>Context</h2>
+       <p>Customers were struggling to find products through the primary navigation on the ecommerce site, defaulting instead to search as their main discovery method. While search provided access to products, it forced users into large result sets that required additional filtering, creating unnecessary friction early in the shopping journey.
        </p>
-       <div class="container">
-        <div class="row">
-          <div class="col">
-            <p class="minor-heading">Skills</p>
-            <p>Quant Data Analysis<br>Wireframing<br>Paper Prototype Tests<br>Remote User Tests<br>Card Sorting</p>
-          </div>
-          <div class="col">
-            <p class="minor-heading">Tools</p>
-            <p>Google Analytics<br>Balsamiq<br>Userlytics</p>
-          </div>
-        </div>
-        </div>
-      <h2>Problem</h2>
+       <p>I led a research-driven effort to evaluate how customers were using (and not using) the navigation and to redesign the information architecture to better align with customer mental models and shopping behaviors.</p>
+      <h2>Problem Definition</h2>
       <p>
-        None of our customers were using the main navigation on our website. A recent click map of the homepage showed that out of 10k users, the navigation received 0% of clicks. As a result, our users were using search as their primary means of locating products and information. By defaulting to search, users were presented with a large search result list that they then had to filter themselves.
+        Behavioral analytics revealed a critical usability failure:
       </p>
+      <ul>
+        <li>Homepage click-map data showed 0% interaction with the main navigation across ~10,000 users</li>
+        <li> Customers overwhelmingly relied on search to locate products and information</li>
+          <li>The navigation contained 11 highly specific, ambiguous labels, making it difficult to scan or understand
+          </li>
+      </ul>
+      <p>Hypothesis: The navigation structure and labeling did not reflect how customers conceptualized the catalog, leading to avoidance and overreliance on search.
+      </p>
+
       <figure>
         <img src="../img/homepage-nav-desktop.png" alt="heatmap of the main navigation showing zero clicks on desktop">
         <figcaption>Screenshot of the click map of the top navigation of the website.</figcaption>
       </figure>
-      <p>I hypothesized there were several reasons why our users were not using the main navigation: the link text was too specific, confusing, and there were too many items (11 links).</p>
      
-      <h2>Research</h2>
-      <p>I analyzed our customers' search terms. The data showed that the majority of searches are for a specific author name, followed by topic of interest, and then by product title. The navigation did not highlight these popular search areas.</p>
+      <h2>Research & Insights</h2>
+      <p>I combined quantitative and qualitative methods to understand customer intent and mental models:</p>
+      <ul>
+        <li>Search log analysis: The majority of searches fell into three categories:
+            <ul><li>Author name</li><li>Topic of interest</li><li>Product title</li></ul></li>
+          <li>Gap analysis: These high-intent categories were not clearly represented in the existing navigation</li>
+          <li>Card sorting: Validated how customers grouped content and expected to find products</li>
+          <li>Usability testing: Identified confusion around labels and depth of navigation
+          </li>
+      </ul>
+      <p>These insights indicated that customers were not failing to explore—they were failing to recognize the navigation as useful.</p>
       <figure>
         <img src="../img/search-terms-Q1-2019.png" alt="customer search terms">
         <figcaption>Pie chart showing customer search terms percentages.</figcaption>
       </figure>
-      <h2>Solution</h2>
-      <p>Working with the Digital Design and Product Manager, I used this data to design a new navigation that focused on the search terms our customers used.</p>
-        <p>After two sets of in-person paper prototype tests, discussions with internal product teams, and several rounds of revisions, the Design and Product Manager and I finalized the wireframes and functionality for the new navigation.</p>
-     <h2>Results</h2>
-     <p>Our heat & click map data shows that about 12% of clicks on the homepage were for content in the drop-downs. This is a great increase over 0% of clicks from the previous navigation.</p>
+      <h2>Design & Collaboration</h2>
+      <p>Partnering closely with Digital Design and Product Management, I translated research findings into a new navigation model that prioritized customer language and discovery patterns.</p>
+        <ul>
+          <li>Designed a revised IA focused on top search intents and clearer category groupings</li>
+          <li>Iterated through multiple rounds of wireframes and interaction models</li>
+            <li>Facilitated two rounds of in-person paper prototype testing to validate comprehension and findability</li>
+            <li>Incorporated feedback from internal stakeholders while preserving research-backed decisions
+            </li>
+        </ul>
+     <h2>Outcomes & Impact</h2>
+     <p>Post-launch data demonstrated significant improvements across engagement, revenue, and experience quality:
+    </p>
+    <ul>
+      <li>Navigation engagement: ~12% of homepage clicks interacted with navigation dropdowns (up from 0%)</li>
+      <li>Revenue impact: Strategic product placement within navigation dropdowns drove purchase increases ranging from high double-digit to low four-digit percentage gains, depending on category</li>
+        <li>Experience metrics:
+            <ul>
+              <li>System Usability Scale (SUS) increased by an average of 0.94 points (5-point Likert scale)</li>
+              <li>Likelihood-to-repurchase increased by 0.85 points (5-point Likert scale)</li>
+            </ul>
+          </li>
+    </ul>
 
-       <p>There are two other improvements that resulted from the new navigation. First, revenue was increased by the product placement in the menu drop-downs. The percent increase in product purchase ranged from high double-digits to low 4-digits.</p>
-        
-       <p>Second, our overall user experience scores for the e-commerce site increased. Our system usability scale (SUS) increased an average of 0.94 points (on a Likert 5-point scale), and our likely-to-repurchase score increased an average of 0.85 points (on a Likert 5-point scale).</p>
-        
-        <p>I realize that the improvement in scores may not be the sole result of the new navigation; however, there were only two structural changes made during the site transition (the new navigation and a stepped checkout), so I believe the new navigation was at least partially responsible for the improvement in scores.</p>
+       <p>While multiple factors can influence UX metrics, only two major structural changes occurred during this period (the new navigation and a stepped checkout), suggesting the navigation redesign was a meaningful contributor to these gains.</p>
+       <h2>Lead Researcher Contribution</h2>
+       <ul>
+        <li>Identified a critical IA failure using behavioral analytics</li>
+        <li>Led mixed-methods research to uncover customer mental models</li>
+        <li>Translated insights into a scalable navigation strategy</li>
+        <li>Influenced product and design decisions through evidence-based recommendations</li>
+        <li>Measured impact using engagement, revenue, and experience metric</li>
+       </ul>
       </div>
     </div>
   </section>
