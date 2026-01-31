@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="velocity-master/velocity.min.js"></script>
+    <script src="velocity-master/velocity.ui.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Kelly King">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Kelly King - UX Researcher</title>
+
+
+
+    <style>
+        #main {
+            position: relative;
+            height: 100vh;
+        }
+
+        #one {
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            opacity: 0.85;
+            width: 200px;
+        }
+
+        #two {
+            height: 100vh;
+            opacity: 0.9;
+            position: absolute;
+            left: 250px;
+            width: 200px;
+        }
+
+        #three {
+            height: 100vh;
+            opacity: 0.8;
+            position: absolute;
+            left: 500px;
+            width: 200px;
+        }
+
+        #four {
+            height: 100vh;
+            opacity: 0.7;
+            position: absolute;
+            left: 600px;
+            width: 200px;
+        }
+
+        #five {
+            height: 100vh;
+            opacity: 0.65;
+            position: absolute;
+            left: 900px;
+            width: 800px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            var color = randomColor({
+                hue: 'blue'
+            });
+            var color2 = randomColor({
+                hue: 'blue'
+            });
+            var color3 = randomColor({
+                hue: 'blue'
+            });
+            var color4 = randomColor({
+                hue: 'purple'
+            });
+            var color5 = randomColor({
+                hue: 'purple'
+            });
+            var colorMain = randomColor({
+                hue: 'pink'
+            });
+            $("#one").css("background-color", color);
+            $("#two").css("background-color", color2);
+            $("#three").css("background-color", color3);
+            $("#four").css("background-color", color4);
+            $("#five").css("background-color", color5);
+            $("#main").css("background-color", colorMain);
+
+
+
+
+            // Function to start the animation loop
+            function animateColorLoop() {
+
+                // random hex color and width
+                var newWidth = Math.floor(Math.random() * 700) + 10 + "px"; // Width between 10px-700px
+                var newLeft = Math.floor(Math.random() * 1300) + 200 + "px"; // Left between 200px-1300px
+                var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16); // Random hex c
+                var newWidth2 = Math.floor(Math.random() * 900) + 50 + "px"; // Width between 50px-900px
+                var newLeft2 = Math.floor(Math.random() * 900) + 1 + "px"; // Left between 1px-900px
+                var randomColor2 = '#' + Math.floor(Math.random() * 16777215).toString(16); // Random hex c
+
+
+                $('#two')
+                    .velocity(
+                        {
+                            backgroundColor: randomColor, // Animate to a new random color
+                            width: newWidth,
+                            left: newLeft
+                        },
+                        {
+                            duration: 10000, // Duration of the fade (1 second)
+                            easing: "swing",
+                            complete: animateColorLoop // Loop: Call this function again when done
+                        }
+                    );
+                $('#three')
+                    .velocity(
+                        {
+                            backgroundColor: randomColor2, // Animate to a new random color
+                            width: newWidth2,
+                            left: newLeft2
+                        },
+                        {
+                            duration: 10000, // Duration of the fade (1 second)
+                            easing: "swing",
+                            complete: animateColorLoop // Loop: Call this function again when done
+                        }
+                    );
+
+            }
+
+            // Start the loop on the element
+            animateColorLoop();
+
+            // Function to start the animation loop
+            function animateColorLoop2() {
+
+                // random hex color and width
+                var newWidth3 = Math.floor(Math.random() * 1000) + 2 + "px"; // Width between 2px-1000px
+                var newLeft3 = Math.floor(Math.random() * 1100) + 10 + "px"; // Left between 10px-1100px
+                var randomColor3 = '#' + Math.floor(Math.random() * 16777215).toString(16); // Random hex c
+
+
+
+                $('#one')
+                    .velocity(
+                        {
+                            backgroundColor: randomColor3, // Animate to a new random color
+                            width: newWidth3,
+                            left: newLeft3
+                        },
+                        {
+                            duration: 10000, // Duration of the fade (1 second)
+                            easing: "swing",
+                            complete: animateColorLoop2 // Loop: Call this function again when done
+                        }
+                    );
+
+            }
+
+            // Start the loop on the element
+            animateColorLoop2();
+
+            // Function to start the animation loop
+            function animateColorLoop3() {
+
+                // random hex color and width
+
+                var newWidth4 = Math.floor(Math.random() * 1200) + 50 + "px"; // Width between 50px-1200px
+                var newLeft4 = Math.floor(Math.random() * 1500) + 10 + "px"; // Left between 10px-1500px
+                var randomColor4 = '#' + Math.floor(Math.random() * 16777215).toString(16); // Random hex c
+
+
+
+                $('#four')
+                    .velocity(
+                        {
+                            backgroundColor: randomColor4, // Animate to a new random color
+                            width: newWidth4,
+                            left: newLeft4
+                        },
+                        {
+                            duration: 5000, // Duration of the fade (1 second)
+                            easing: "swing",
+                            complete: animateColorLoop3 // Loop: Call this function again when done
+                        }
+                    );
+
+            }
+
+            // Start the loop on the element
+            animateColorLoop3();
+
+
+
+            // Function to start the animation loop
+            function animateColorLoop4() {
+
+                // random hex color and width
+
+                var newWidth5 = Math.floor(Math.random() * 1200) + 50 + "px"; // Width between 50px-1200px
+                var newLeft5 = Math.floor(Math.random() * 1500) + 10 + "px"; // Left between 10px-1500px
+                var randomColor5 = '#' + Math.floor(Math.random() * 16777215).toString(16); // Random hex c
+
+
+
+                $('#five')
+                    .velocity(
+                        {
+                            backgroundColor: randomColor5, // Animate to a new random color
+                            width: newWidth5,
+                            left: newLeft5
+                        },
+                        {
+                            duration: 6000, // Duration of the fade (1 second)
+                            easing: "swing",
+                            complete: animateColorLoop4 // Loop: Call this function again when done
+                        }
+                    );
+
+            }
+
+            // Start the loop on the element
+            animateColorLoop4();
+
+
+
+            // Function to start the animation loop
+            function animateColorLoop5() {
+
+                // random hex color and width
+
+                var randomColor5 = '#' + Math.floor(Math.random() * 16777215).toString(16); // Random hex c
+
+
+
+                $('#main')
+                    .velocity(
+                        {
+                            backgroundColor: randomColor5
+
+                        },
+                        {
+                            duration: 3500, // Duration of the fade (1 second)
+                            easing: "swing",
+                            complete: animateColorLoop5 // Loop: Call this function again when done
+                        }
+                    );
+
+            }
+
+            // Start the loop on the element
+            animateColorLoop5();
+
+        });
+    </script>
+</body>
+
+</html>
