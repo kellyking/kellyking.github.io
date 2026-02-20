@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="velocity-master/velocity.min.js"></script>
+    <script src="velocity-master/velocity.ui.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Kelly King">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Kelly King - UX Researcher</title>
+
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #main {
+            position: relative;
+            height: 100vh;
+            background-color: rgb(28, 32, 32);
+        }
+
+        #one {
+            width: 0px;
+            height: 0px;
+            background-color: transparent;
+            border: 1px solid lightgrey;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        #two {
+            width: 0px;
+            height: 0px;
+            background-color: transparent;
+            border: 1px solid lightgrey;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        #three {
+            width: 0px;
+            height: 0px;
+            background-color: transparent;
+            border: 1px solid lightgrey;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        #four {
+            width: 0px;
+            height: 0px;
+            background-color: transparent;
+            border: 1px solid lightgrey;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        #five {
+            width: 0px;
+            height: 0px;
+            background-color: transparent;
+            border: 1px solid lightgrey;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        #six {
+            width: 0px;
+            height: 0px;
+            background-color: transparent;
+            border: 1px solid lightgrey;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            function placeRandomCircle() {
+
+                var container = $('#main');
+                // Get the maximum possible top and left positions within the container
+                var containerWidth = container.width();
+                var containerHeight = container.height();
+                var circleDiameter = 200; // Must match the CSS width/height
+
+                // Calculate random positions, ensuring the whole circle stays inside the container
+                // Math.random() generates a number between 0 and 1
+                var randomLeft = Math.floor(Math.random() * (containerWidth - circleDiameter));
+                var randomTop = Math.floor(Math.random() * (containerHeight - circleDiameter));
+                var randomLeft2 = Math.floor(Math.random() * (containerWidth - circleDiameter));
+                var randomTop2 = Math.floor(Math.random() * (containerHeight - circleDiameter));
+                console.log("fix the css");
+                $('#one').css({
+                    top: randomTop,
+                    left: randomLeft,
+                    opacity: 1,
+                    width: 0,
+                    height: 0
+                });
+                $('#two').css({
+                    top: randomTop,
+                    left: randomLeft,
+                    opacity: 1,
+                    width: 0,
+                    height: 0
+                });
+                $('#three').css({
+                    top: randomTop,
+                    left: randomLeft,
+                    opacity: 1,
+                    width: 0,
+                    height: 0
+                });
+                $('#four').css({
+                    top: randomTop2,
+                    left: randomLeft2,
+                    opacity: 1,
+                    width: 0,
+                    height: 0
+                });
+                $('#five').css({
+                    top: randomTop2,
+                    left: randomLeft2,
+                    opacity: 1,
+                    width: 0,
+                    height: 0
+                });
+                $('#six').css({
+                    top: randomTop2,
+                    left: randomLeft2,
+                    opacity: 1,
+                    width: 0,
+                    height: 0
+                });
+
+                var randomDiameter = Math.floor(Math.random() * (700 - 300 + 1)) + 300;
+                var randomDiameter2 = Math.floor(Math.random() * (700 - 300 + 1)) + 300;
+
+
+
+                $("#one").velocity({
+                    width: randomDiameter,
+                    height: randomDiameter
+                }, {
+                    duration: 10000,
+                    easing: "easeOutQuad"
+                })
+                    .velocity({
+                        opacity: 0
+                    }, {
+                        duration: 800, // Slow fade
+                        delay: 100 // Optional delay
+                    })
+                    .velocity({
+                        width: 0,
+                        height: 0,
+                        opacity: 1
+                    }, {
+                        duration: 1, // Slow fade
+                        delay: 0 // Optional delay
+                    });
+                $("#two").velocity({
+                    width: randomDiameter,
+                    height: randomDiameter
+                }, {
+                    duration: 10000,
+                    easing: "easeOutQuad",
+                    delay: 1000
+                })
+                    .velocity({
+                        opacity: 0
+                    }, {
+                        duration: 800, // Slow fade
+                        delay: 100 // Optional delay
+                    }).velocity({
+                        width: 0,
+                        height: 0,
+                        opacity: 1
+                    }, {
+                        duration: 1, // Slow fade
+                        delay: 0 // Optional delay
+                    });
+
+                $("#three").velocity({
+                    width: randomDiameter,
+                    height: randomDiameter
+                }, {
+                    duration: 10000,
+                    easing: "easeOutQuad",
+                    delay: 3000
+                })
+                    .velocity({
+                        opacity: 0
+                    }, {
+                        duration: 800, // Slow fade
+                        delay: 100 // Optional delay
+                    }).velocity({
+                        width: 0,
+                        height: 0,
+                        opacity: 1
+                    }, {
+                        duration: 1, // Slow fade
+                        delay: 0 // Optional delay
+                    });
+
+
+                $("#four").velocity({
+                    width: randomDiameter2,
+                    height: randomDiameter2
+                }, {
+                    duration: 10000,
+                    easing: "easeOutQuad",
+                    delay: 1000
+                })
+                    .velocity({
+                        opacity: 0
+                    }, {
+                        duration: 800, // Slow fade
+                        delay: 100 // Optional delay
+                    }).velocity({
+                        width: 0,
+                        height: 0,
+                        opacity: 1
+                    }, {
+                        duration: 1, // Slow fade
+                        delay: 0 // Optional delay
+                    });
+                $("#five").velocity({
+                    width: randomDiameter2,
+                    height: randomDiameter2
+                }, {
+                    duration: 10000,
+                    easing: "easeOutQuad",
+                    delay: 2000
+                })
+                    .velocity({
+                        opacity: 0
+                    }, {
+                        duration: 800, // Slow fade
+                        delay: 100 // Optional delay
+                    }).velocity({
+                        width: 0,
+                        height: 0,
+                        opacity: 1
+                    }, {
+                        duration: 1, // Slow fade
+                        delay: 0 // Optional delay
+                    });
+
+                $("#six").velocity({
+                    width: randomDiameter2,
+                    height: randomDiameter2
+                }, {
+                    duration: 10000,
+                    easing: "easeOutQuad",
+                    delay: 4000
+                })
+                    .velocity({
+                        opacity: 0
+                    }, {
+                        duration: 800, // Slow fade
+                        delay: 100 // Optional delay
+                    }).velocity({
+                        width: 0,
+                        height: 0,
+                        opacity: 1
+                    }, {
+                        duration: 1, // Slow fade
+                        delay: 0 // Optional delay
+                    });
+
+
+
+
+            }
+
+            placeRandomCircle();
+
+
+            const interval = setInterval(() => {
+                $.Velocity.RunSequence(placeRandomCircle());
+            }, 19000);
+
+
+
+        });
+    </script>
+</body>
+
+</html>
