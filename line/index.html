@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/velocity/1.2.1/velocity.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/velocity/1.2.1/velocity.ui.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Kelly King">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Kelly King - UX Researcher</title>
+
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #main {
+            position: relative;
+            height: 100vh;
+            background-color: whitesmoke;
+        }
+
+        #one {
+            width: 6px;
+            height: 2px;
+            background-color: grey;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            opacity: 0;
+
+        }
+
+        #two {
+            width: 6px;
+            height: 2px;
+            background-color: grey;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            opacity: 0;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+
+
+            function placeRandomLine() {
+
+                var container = $('#main');
+                var containerWidth = container.width();
+                var randomLeft = Math.floor(Math.random() * (containerWidth));
+                var randomLeft2 = Math.floor(Math.random() * (containerWidth));
+                $('#one').css({
+                    left: randomLeft,
+                    top: 0
+                });
+                $('#two').css({
+                    left: randomLeft2,
+                    top: 0
+                });
+
+                $("#one").velocity({
+                    top: 0,
+                    opacity: 1,
+                    height: "3px"
+                }, {
+                    duration: 1,
+                    delay: 0
+                })
+                    .velocity({
+                        height: "50vh"
+                    }, {
+                        duration: 1500,
+                        delay: 0,
+                        easing: "Linear",
+                        queue: false
+                    })
+                    .velocity({
+                        top: "100vh"
+                    }, {
+                        duration: 1500,
+                        delay: 1100,
+                        queue: false
+                    });
+
+                $("#two").velocity({
+                    top: 0,
+                    opacity: 1,
+                    height: "3px",
+                }, {
+                    duration: 1,
+                    delay: 0
+                })
+                    .velocity({
+                        height: "50vh"
+                    }, {
+                        duration: 1500,
+                        delay: 0,
+                        easing: "Linear",
+                        queue: false
+                    })
+                    .velocity({
+                        top: "100vh"
+                    }, {
+                        duration: 1500,
+                        delay: 1100,
+                        queue: false
+                    });
+
+            }
+
+            placeRandomLine();
+
+
+            const interval = setInterval(() => {
+                $.Velocity.RunSequence(placeRandomLine());
+            }, 3600);
+
+
+
+        });
+    </script>
+</body>
+
+</html>
